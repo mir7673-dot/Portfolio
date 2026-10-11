@@ -6,7 +6,6 @@
 <title>The C(9)atalog — Dylan Kim</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -18,32 +17,15 @@
 html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;letter-spacing:0.02em}
 
 /* ══ TOP HEADER ══ */
-#header{
-  position:fixed;top:0;left:0;right:0;height:var(--hd-h);
-  background:var(--bg);
-  display:flex;align-items:center;
-  padding:0 1.5rem;z-index:300;
-  border-bottom:1px solid transparent;
-}
-.hd-logo{
-  font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;
-  color:var(--text);cursor:pointer;white-space:nowrap;font-weight:500;
-  text-decoration:none;background:none;border:none;font-family:var(--mono);
-}
+#header{position:fixed;top:0;left:0;right:0;height:var(--hd-h);background:var(--bg);display:flex;align-items:center;padding:0 1.5rem;z-index:300;border-bottom:1px solid transparent}
+.hd-logo{font-size:0.95rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--text);cursor:pointer;white-space:nowrap;font-weight:500;text-decoration:none;background:none;border:none;font-family:var(--mono)}
 .hd-logo .dim{color:var(--subtle);font-weight:300}
 .hd-nav{display:flex;gap:1.75rem;margin-left:42%}
-.hd-nav a{
-  font-size:0.95rem;text-transform:uppercase;letter-spacing:0.04em;
-  color:var(--muted);cursor:pointer;text-decoration:none;
-  background:none;border:none;font-family:var(--mono);padding:0;
-  transition:color 0.15s;
-}
+.hd-nav a{font-size:0.95rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);cursor:pointer;text-decoration:none;background:none;border:none;font-family:var(--mono);padding:0;transition:color 0.15s}
 .hd-nav a:hover,.hd-nav a.active{color:var(--text);text-decoration:underline;text-underline-offset:3px}
 .hd-dot{margin-left:auto;width:9px;height:9px;border-radius:50%;background:var(--text)}
 .hd-hamburger{display:none;margin-left:auto;flex-direction:column;gap:3px;cursor:pointer;border:none;background:none;padding:4px}
 .hd-hamburger span{display:block;width:18px;height:1px;background:var(--text)}
-
-/* mobile drawer */
 #drawer{display:none;position:fixed;top:var(--hd-h);left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);padding:1.1rem 1.5rem;z-index:299;flex-direction:column;gap:0.9rem}
 #drawer.open{display:flex}
 #drawer a{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);cursor:pointer}
@@ -60,32 +42,26 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 .archive-intro p{font-size:0.82rem;line-height:1.7;text-transform:uppercase;letter-spacing:0.03em;color:var(--text)}
 #archiveCanvas{position:relative;width:100%;padding:0 1.5rem 4rem}
 
-/* image block */
 .img-block{position:absolute;cursor:pointer;user-select:none}
 .img-block.edit-mode{cursor:grab;outline:1.5px solid #3b82f6;outline-offset:1px}
 .img-block.dragging{cursor:grabbing;z-index:50}
 .blk-img{width:100%;overflow:hidden;background:var(--bg2);display:flex;align-items:center;justify-content:center}
 .blk-img img{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;transition:transform 0.5s ease}
 .blk-img .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
-.img-block:not(.edit-mode):hover .blk-img img,
-.img-block:not(.edit-mode):hover .blk-img .ph{transform:scale(1.012)}
+.img-block:not(.edit-mode):hover .blk-img img,.img-block:not(.edit-mode):hover .blk-img .ph{transform:scale(1.012)}
 .blk-cap{padding-top:0.5rem;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.03em;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .blk-cap .ct{color:var(--text)}
 .blk-cap .cs{color:var(--subtle);margin:0 0.35rem}
+.blk-cap .cn{color:var(--subtle);margin-left:0.45rem}
 
-/* resize */
 .resize-h{display:none;position:absolute;bottom:24px;right:0;width:16px;height:16px;cursor:se-resize;z-index:20}
 .resize-h::after{content:'';position:absolute;bottom:2px;right:2px;width:9px;height:9px;border-right:1.5px solid #3b82f6;border-bottom:1.5px solid #3b82f6}
 .img-block.edit-mode .resize-h{display:block}
-
-/* toolbar */
 .blk-tb{display:none;position:absolute;top:-26px;left:0;background:#111;border-radius:2px;padding:2px 4px;white-space:nowrap;z-index:30;gap:2px;align-items:center}
 .img-block.edit-mode.selected .blk-tb{display:flex}
 .tb-b{background:none;border:none;color:#bbb;font-size:0.56rem;letter-spacing:0.04em;text-transform:uppercase;cursor:pointer;padding:2px 5px;font-family:var(--mono)}
 .tb-b:hover{color:#fff}
-.tb-b.del{color:#f87171}
 
-/* edit bar */
 #editBar{display:none;position:fixed;top:0;left:0;right:0;height:var(--hd-h);background:#111;align-items:center;justify-content:space-between;padding:0 1.5rem;z-index:310;font-size:0.66rem;letter-spacing:0.06em;text-transform:uppercase;color:#999}
 #editBar.show{display:flex}
 .eb-actions{display:flex;gap:0.5rem}
@@ -93,11 +69,8 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 .eb-btn:hover{border-color:#fff;color:#fff}
 .eb-btn.pri{background:#fff;color:#111;border-color:#fff}
 
-/* ══ ARCHIBOOK (passion cards — editorial archive style) ══ */
-#page-archibook{
-  --pp:#f3efe6;--pink:#1c1a17;--psoft:#4a463f;--pfaint:#8a8478;--prule:#d8d2c4;--pox:#9c3b2e;
-  background:var(--pp);color:var(--pink);min-height:100vh;
-}
+/* ══ ARCHIBOOK ══ */
+#page-archibook{--pp:#f3efe6;--pink:#1c1a17;--psoft:#4a463f;--pfaint:#8a8478;--prule:#d8d2c4;--pox:#9c3b2e;background:var(--pp);color:var(--pink);min-height:100vh}
 .ab-wrap{max-width:1200px;margin:0 auto;padding:3.5rem 1.5rem 5rem}
 .ab-masthead{border-bottom:1px solid var(--prule);padding-bottom:1.75rem;margin-bottom:2.5rem}
 .ab-kicker{font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--pfaint);margin-bottom:1rem}
@@ -106,13 +79,11 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 .ab-stats{display:flex;gap:2.5rem;margin-top:1.75rem;flex-wrap:wrap}
 .ab-stat-n{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;line-height:1;color:var(--pox)}
 .ab-stat-l{font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--pfaint);margin-top:0.4rem}
-
 .ab-collection-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;margin-bottom:1.75rem;flex-wrap:wrap}
 .ab-collection-title{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.6rem;font-weight:500;color:var(--pink)}
 .ab-toggle{display:flex;gap:0;border:1px solid var(--prule);border-radius:2px;overflow:hidden}
 .ab-tog-btn{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.45rem 0.9rem;background:none;border:none;cursor:pointer;color:var(--psoft);transition:all 0.15s}
 .ab-tog-btn.active{background:var(--pink);color:var(--pp)}
-
 .ab-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
 .ab-card{position:relative;cursor:pointer;background:#fff;border:1px solid var(--prule);border-radius:2px;overflow:hidden;aspect-ratio:3/4;transition:transform 0.25s ease,box-shadow 0.25s ease}
 .ab-card:hover{transform:translateY(-5px) scale(1.025);box-shadow:0 14px 30px rgba(28,26,23,0.16);z-index:2}
@@ -123,31 +94,45 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 .ab-card:hover .ab-card-meta{opacity:1}
 .ab-cm-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.92rem;color:#fff;line-height:1.2}
 .ab-cm-loc{font-family:'IBM Plex Mono',monospace;font-size:0.52rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-top:0.2rem}
-
-/* archibook lightbox */
 #abLightbox{display:none;position:fixed;inset:0;background:rgba(28,26,23,0.93);z-index:600;align-items:center;justify-content:center;cursor:zoom-out;padding:2rem;flex-direction:column;gap:1rem}
 #abLightbox.open{display:flex}
-#abLightbox img{max-width:88vw;max-height:78vh;object-fit:contain;display:block;border-radius:2px}
-.ablb-cap{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:var(--pp,#f3efe6)}
+#abLightbox img{max-width:88vw;max-height:72vh;object-fit:contain;display:block;border-radius:2px}
+.ablb-cap{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;color:#f3efe6}
 .ablb-loc{font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(243,239,230,0.6);margin-top:-0.4rem}
+.ablb-desc{font-family:'EB Garamond',serif;font-size:0.95rem;line-height:1.6;color:rgba(243,239,230,0.85);max-width:620px;text-align:center}
 .ablb-close{position:absolute;top:1.25rem;right:1.5rem;color:#f3efe6;font-size:1.4rem;cursor:pointer;opacity:0.6;border:none;background:none;line-height:1}
 .ablb-close:hover{opacity:1}
 
 /* ══ DETAIL ══ */
 #detailPanel{display:none;position:fixed;top:var(--hd-h);left:0;right:0;bottom:0;background:#fff;z-index:200;overflow-y:auto}
 #detailPanel.open{display:block}
-.det-inner{max-width:900px;margin:0 auto;padding:3rem 1.5rem 5rem}
+.det-inner{max-width:1000px;margin:0 auto;padding:3rem 1.5rem 5rem}
 .det-back{font-size:0.7rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);cursor:pointer;border:none;background:none;padding:0;margin-bottom:2.5rem;font-family:var(--mono);transition:color 0.15s}
 .det-back:hover{color:var(--text)}
-.det-hero{width:100%;aspect-ratio:16/9;background:var(--bg2);overflow:hidden;display:flex;align-items:center;justify-content:center;margin-bottom:2rem;cursor:zoom-in;border:1px solid var(--border)}
+.det-hero{width:100%;max-height:70vh;aspect-ratio:16/10;background:var(--bg2);overflow:hidden;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;cursor:zoom-in;border:1px solid var(--border)}
 .det-hero img{width:100%;height:100%;object-fit:contain;display:block}
-.det-grid{display:grid;grid-template-columns:1fr 180px;gap:2.5rem;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+.det-grid{display:grid;grid-template-columns:1fr 180px;gap:2.5rem;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
 .det-title{font-size:1rem;text-transform:uppercase;letter-spacing:0.04em;line-height:1.4;margin-bottom:0.6rem}
 .det-short{font-size:0.78rem;color:var(--muted);line-height:1.8;text-transform:uppercase;letter-spacing:0.02em}
 .det-meta{display:flex;flex-direction:column;gap:0.9rem}
-.dm-l{font-size:0.62rem;color:var(--subtle);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:0.15rem}
+.dm-l{font-size:0.62rem;color:var(--subtle);letter-spacing:0.14em;text-transform:uppercase;margin-bottom:0.15rem}
 .dm-v{font-size:0.74rem;text-transform:uppercase;letter-spacing:0.02em}
-.det-body{font-size:0.78rem;color:var(--muted);line-height:1.9;text-transform:uppercase;letter-spacing:0.02em}
+.det-body{font-size:0.78rem;color:var(--muted);line-height:1.9;text-transform:uppercase;letter-spacing:0.02em;margin-bottom:2rem}
+.det-gallery-label{font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--subtle);margin-bottom:1rem}
+.det-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:0.6rem}
+.det-gitem{aspect-ratio:4/3;background:var(--bg2);overflow:hidden;cursor:zoom-in;border:1px solid var(--border)}
+.det-gitem img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.4s}
+.det-gitem:hover img{transform:scale(1.05)}
+
+/* ══ LIGHTBOX (works gallery) ══ */
+#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.93);z-index:600;align-items:center;justify-content:center;cursor:zoom-out}
+#lightbox.open{display:flex}
+#lightbox img{max-width:92vw;max-height:88vh;object-fit:contain;display:block}
+.lb-close{position:absolute;top:1.25rem;right:1.5rem;color:#fff;font-size:1.4rem;cursor:pointer;opacity:0.6;border:none;background:none;font-family:var(--mono);line-height:1;z-index:2}
+.lb-close:hover{opacity:1}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:2rem;cursor:pointer;opacity:0.5;border:none;background:none;padding:0 1rem;z-index:2;font-family:var(--mono)}
+.lb-nav:hover{opacity:1}
+.lb-prev{left:0.5rem}.lb-next{right:0.5rem}
 
 /* ══ INFO ══ */
 #page-info.active{display:block}
@@ -177,65 +162,46 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 .adm-t{font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem}
 .fg{margin-bottom:0.9rem}
 .fg label{display:block;font-size:0.6rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:0.35rem}
-.fg input,.fg textarea,.fg select{width:100%;padding:0.5rem 0.65rem;border:1px solid var(--border);border-radius:1px;font-size:0.78rem;font-family:var(--mono);background:#fff;color:var(--text);outline:none;transition:border-color 0.15s}
-.fg input:focus,.fg textarea:focus{border-color:var(--text)}
-.fg textarea{resize:vertical;min-height:66px}
-.fg input[type=checkbox]{width:auto;display:inline-block}
-.btn-p{padding:0.5rem 1.05rem;background:var(--text);color:#fff;border:none;border-radius:1px;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;font-family:var(--mono);transition:opacity 0.15s}
+.fg input{width:100%;padding:0.5rem 0.65rem;border:1px solid var(--border);border-radius:1px;font-size:0.78rem;font-family:var(--mono);background:#fff;color:var(--text);outline:none}
+.fg input:focus{border-color:var(--text)}
+.btn-p{padding:0.5rem 1.05rem;background:var(--text);color:#fff;border:none;border-radius:1px;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;font-family:var(--mono)}
 .btn-p:hover{opacity:0.72}
-.btn-p:disabled{opacity:0.45;cursor:default}
-.btn-o{padding:0.46rem 0.9rem;background:none;border:1px solid var(--border);border-radius:1px;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;color:var(--muted);font-family:var(--mono);transition:all 0.15s}
+.btn-o{padding:0.46rem 0.9rem;background:none;border:1px solid var(--border);border-radius:1px;font-size:0.64rem;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;color:var(--muted);font-family:var(--mono)}
 .btn-o:hover{border-color:var(--text);color:var(--text)}
-.btn-d{padding:0.22rem 0.55rem;background:none;border:1px solid var(--border);border-radius:1px;font-size:0.58rem;letter-spacing:0.04em;text-transform:uppercase;cursor:pointer;color:var(--muted);font-family:var(--mono);transition:all 0.15s;white-space:nowrap}
-.btn-d:hover{border-color:#c0392b;color:#c0392b}
 .login-err{font-size:0.7rem;color:#c0392b;margin-top:0.5rem;display:none}
-.adm-dash{display:none;max-width:520px}
+.adm-dash{display:none;max-width:540px}
 .adm-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;flex-wrap:wrap;gap:0.7rem}
-.adm-h{font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase}
-.adm-top-r{display:flex;gap:0.5rem}
-.asec{margin-bottom:2rem}
-.asec-t{font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--subtle);margin-bottom:0.7rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
-.arow{display:flex;justify-content:space-between;align-items:center;padding:0.5rem 0;border-bottom:1px solid var(--border);gap:0.7rem}
-.arow-n{font-size:0.74rem;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.arow-s{font-size:0.6rem;color:var(--muted);margin-top:0.1rem}
-.add-form{border:1px solid var(--border);padding:1.2rem;border-radius:1px;margin-top:0.7rem;display:none}
-.add-form.open{display:block}
-.add-t{font-size:0.6rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);margin-bottom:0.9rem}
-.frow{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem}
-.form-actions{display:flex;gap:0.55rem;margin-top:0.6rem}
-.edit-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.4rem 0.9rem;background:#3b82f6;color:#fff;border:none;border-radius:1px;font-size:0.62rem;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;font-family:var(--mono);transition:opacity 0.15s;margin-bottom:0.7rem}
-.edit-btn:hover{opacity:0.8}
+.adm-note{font-size:0.72rem;color:var(--muted);line-height:1.8;text-transform:none;letter-spacing:0;margin-bottom:1.25rem}
+.adm-note code{background:var(--bg2);padding:0.1rem 0.35rem;border-radius:1px;font-size:0.68rem}
+.edit-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.45rem 1rem;background:#3b82f6;color:#fff;border:none;border-radius:1px;font-size:0.68rem;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;font-family:var(--mono);margin-right:0.5rem}
+.edit-btn:hover{opacity:0.82}
 
-/* ══ LIGHTBOX ══ */
-#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.93);z-index:600;align-items:center;justify-content:center;cursor:zoom-out}
-#lightbox.open{display:flex}
-#lightbox img{max-width:90vw;max-height:90vh;object-fit:contain;display:block}
-.lb-close{position:absolute;top:1.25rem;right:1.5rem;color:#fff;font-size:1.4rem;cursor:pointer;opacity:0.6;border:none;background:none;font-family:var(--mono);line-height:1}
-.lb-close:hover{opacity:1}
+/* ══ EXPORT ══ */
+.exp-ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:700;align-items:center;justify-content:center;padding:1.5rem}
+.exp-ov.open{display:flex}
+.exp-box{background:#fff;border-radius:2px;padding:1.5rem;max-width:720px;width:100%;max-height:88vh;display:flex;flex-direction:column;gap:0.9rem}
+.exp-title{font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
+.exp-box textarea{flex:1;min-height:300px;font-family:var(--mono);font-size:0.66rem;line-height:1.5;padding:0.9rem;border:1px solid var(--border);border-radius:1px;resize:vertical;color:var(--text);background:var(--bg2)}
+.exp-actions{display:flex;gap:0.6rem}
 
 /* ══ RESPONSIVE ══ */
 @media(max-width:760px){
-  .hd-nav{display:none}
-  .hd-dot{display:none}
+  .hd-nav,.hd-dot{display:none}
   .hd-hamburger{display:flex}
   .info-cols{grid-template-columns:1fr;gap:0}
   .det-grid{grid-template-columns:1fr;gap:1.5rem}
-  .frow{grid-template-columns:1fr}
+  .det-gallery{grid-template-columns:repeat(2,1fr)}
   .ab-grid{grid-template-columns:repeat(2,1fr);gap:0.7rem}
-  /* On mobile, free-positioned blocks become a simple stacked column */
   #archiveCanvas{height:auto!important;display:flex;flex-direction:column;gap:2rem;padding-bottom:3rem}
   .img-block{position:relative!important;left:0!important;top:0!important;width:100%!important;height:auto!important}
   .blk-img{aspect-ratio:4/3}
   .resize-h{display:none!important}
 }
-@media(min-width:761px) and (max-width:1000px){
-  .ab-grid{grid-template-columns:repeat(3,1fr)}
-}
+@media(min-width:761px) and (max-width:1000px){.ab-grid{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header id="header">
   <button class="hd-logo" onclick="showPage('archive')">THE C<span class="dim">(9)</span>ATALOG</button>
   <nav class="hd-nav">
@@ -254,11 +220,9 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
   <a onclick="showPage('admin');toggleDrawer()" id="dn-admin">Admin</a>
 </div>
 
-<!-- EDIT BAR -->
 <div id="editBar">
   <span>✦ Edit mode — drag · resize corner · click to select</span>
   <div class="eb-actions">
-    <button class="eb-btn" onclick="addBlockBlank()">+ Add</button>
     <button class="eb-btn pri" onclick="exitEdit()">Done</button>
   </div>
 </div>
@@ -267,9 +231,7 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 
   <!-- ARCHIVE -->
   <div class="page active" id="page-archive">
-    <div class="archive-intro">
-      <p id="archiveIntro">A collection of architecture &amp; design works by Dylan Kim.</p>
-    </div>
+    <div class="archive-intro"><p id="archiveIntro">A collection of architecture &amp; design works by Dylan Kim.</p></div>
     <div id="archiveCanvas"></div>
   </div>
 
@@ -282,7 +244,6 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
         <div class="ab-lede" id="ab-lede">A growing archive of the world's architecture, redrawn by hand. Each card is a study — a way of understanding how a building holds its place in the world. The collection itself is the argument: sustained curiosity, one structure at a time.</div>
         <div class="ab-stats" id="ab-stats"></div>
       </div>
-
       <div class="ab-collection-head">
         <div class="ab-collection-title">The Collection</div>
         <div class="ab-toggle">
@@ -290,7 +251,6 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
           <button class="ab-tog-btn" id="abtog-visited" onclick="abFilter('visited',this)">Visited only</button>
         </div>
       </div>
-
       <div class="ab-grid" id="abGrid"></div>
     </div>
   </div>
@@ -303,11 +263,11 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
         <div class="info-role" id="v-role">Architecture Student · Taipei, Taiwan</div>
       </div>
       <div class="info-cols">
-        <div class="info-colL">
+        <div>
           <div class="info-sec"><div class="info-sec-label">About</div><div class="info-bio" id="v-bio"></div></div>
           <div class="info-sec"><div class="info-sec-label">Awards &amp; Recognitions</div><div id="v-awards"></div></div>
         </div>
-        <div class="info-colR">
+        <div>
           <div class="info-sec"><div class="info-sec-label">Reach Out</div><div id="v-reach"></div></div>
           <div class="info-sec"><div class="info-sec-label">Social</div><div id="v-social"></div></div>
           <div class="info-sec"><div class="info-sec-label">Design</div><div class="skill-tags" id="v-design"></div></div>
@@ -322,100 +282,22 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
   <div class="page" id="page-admin">
     <div class="adm-box" id="loginBox">
       <div class="adm-t">Admin Access</div>
-      <div class="fg"><label>Email</label><input type="email" id="lu" placeholder="you@example.com" autocomplete="username"></div>
+      <div class="fg"><label>Username</label><input type="text" id="lu" placeholder="admin" autocomplete="username"></div>
       <div class="fg"><label>Password</label><input type="password" id="lp" placeholder="••••••••" autocomplete="current-password"></div>
       <button class="btn-p" style="width:100%;margin-top:0.15rem" onclick="doLogin()">Sign in</button>
       <div class="login-err" id="lerr">Incorrect credentials.</div>
     </div>
     <div class="adm-dash" id="adminDash">
       <div class="adm-top">
-        <div class="adm-h">Dashboard</div>
-        <div class="adm-top-r">
-          <button class="btn-o" onclick="doLogout()">Sign out</button>
-        </div>
+        <div class="adm-t" style="margin:0">Dashboard</div>
+        <button class="btn-o" onclick="doLogout()">Sign out</button>
       </div>
-
-      <div class="asec">
-        <div class="asec-t">Archive — Layout Editor</div>
-        <button class="edit-btn" onclick="enterEdit()">✦ Edit layout</button>
-        <p style="font-size:0.7rem;color:var(--muted);line-height:1.75;margin-bottom:1rem;text-transform:none;letter-spacing:0">
-          Drag = move · corner = resize · click → toolbar (Fit / delete). Position changes save automatically.<br>
-          Everything below writes straight to the database — no export/copy-paste step.
-        </p>
-        <div id="adminBlockList"></div>
-        <button class="btn-o" style="margin-top:0.6rem" onclick="openWorkForm();togForm('addBlockForm')">+ Add work</button>
-        <div class="add-form" id="addBlockForm">
-          <div class="add-t" id="nb-form-title">New Work</div>
-          <div class="fg"><label>Title</label><input type="text" id="nb-title"></div>
-          <div class="frow">
-            <div class="fg"><label>Type</label><input type="text" id="nb-type" placeholder="3D"></div>
-            <div class="fg"><label>Year</label><input type="text" id="nb-year" placeholder="2025"></div>
-          </div>
-          <div class="frow">
-            <div class="fg"><label>Medium</label><input type="text" id="nb-med"></div>
-            <div class="fg"><label>Status</label><input type="text" id="nb-stat"></div>
-          </div>
-          <div class="fg"><label>Short description</label><input type="text" id="nb-short"></div>
-          <div class="fg"><label>Full description</label><textarea id="nb-desc"></textarea></div>
-          <div class="fg"><label>Image upload</label><input type="file" id="nb-imgfile" accept="image/*"></div>
-          <div class="fg"><label>Background color</label>
-            <select id="nb-color">
-              <option value="#f3f3f1">Off white</option>
-              <option value="#f5f0e8">Warm beige</option>
-              <option value="#eaf0f5">Cool blue</option>
-              <option value="#f0efed">Warm gray</option>
-              <option value="#edeef0">Soft gray</option>
-              <option value="#f0eef5">Soft purple</option>
-              <option value="#eaf5ee">Soft green</option>
-            </select>
-          </div>
-          <div class="form-actions">
-            <button class="btn-p" id="nb-save-btn" onclick="saveWorkForm()">Save</button>
-            <button class="btn-o" onclick="togForm('addBlockForm')">Cancel</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="asec">
-        <div class="asec-t">Archibook — Cards</div>
-        <div class="fg"><input type="text" id="ac-search" placeholder="Search by name or number…" oninput="renderAdminCardList()"></div>
-        <div id="adminCardList" style="max-height:360px;overflow-y:auto"></div>
-        <button class="btn-o" style="margin-top:0.6rem" onclick="openCardForm();togForm('addCardForm')">+ Add card</button>
-        <div class="add-form" id="addCardForm">
-          <div class="add-t" id="nc-form-title">New Card</div>
-          <div class="frow">
-            <div class="fg"><label>Number</label><input type="number" id="nc-n" min="1"></div>
-            <div class="fg"><label>Category</label><input type="text" id="nc-category" list="cat-list"></div>
-          </div>
-          <datalist id="cat-list">
-            <option value="Landmark"><option value="Heritage"><option value="Cultural">
-            <option value="Stadium"><option value="Public"><option value="Private">
-          </datalist>
-          <div class="fg"><label>Name</label><input type="text" id="nc-name"></div>
-          <div class="fg"><label>Description (meaning)</label><textarea id="nc-desc"></textarea></div>
-          <div class="fg"><label><input type="checkbox" id="nc-visited"> Visited</label></div>
-          <div class="fg"><label>Image upload</label><input type="file" id="nc-imgfile" accept="image/*"></div>
-          <div class="form-actions">
-            <button class="btn-p" id="nc-save-btn" onclick="saveCardForm()">Save</button>
-            <button class="btn-o" onclick="togForm('addCardForm')">Cancel</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="asec">
-        <div class="asec-t">Info — Edit</div>
-        <div class="fg"><label>Name</label><input type="text" id="ei-name"></div>
-        <div class="fg"><label>Role / tagline</label><input type="text" id="ei-role"></div>
-        <div class="fg"><label>Archive intro line</label><input type="text" id="ei-intro"></div>
-        <div class="fg"><label>About</label><textarea id="ei-bio" rows="4"></textarea></div>
-        <div class="fg"><label>Awards (Year — Name, one per line)</label><textarea id="ei-awards" rows="5"></textarea></div>
-        <div class="fg"><label>Reach Out (label: url, one per line)</label><textarea id="ei-reach" rows="3"></textarea></div>
-        <div class="fg"><label>Social (label: url, one per line)</label><textarea id="ei-social" rows="3"></textarea></div>
-        <div class="fg"><label>Design (comma separated)</label><input type="text" id="ei-design"></div>
-        <div class="fg"><label>Resume (label: url)</label><input type="text" id="ei-resume"></div>
-        <div class="fg"><label>Other</label><textarea id="ei-other" rows="3"></textarea></div>
-        <button class="btn-p" onclick="saveInfo()">Save Info</button>
-      </div>
+      <p class="adm-note">
+        Archive layout is loaded from <code>works.csv</code>. To rearrange: click <b>Edit layout</b>, drag images / drag the corner to resize, then <b>Export works.csv</b> and replace the file in your project folder. Re-deploy to publish.<br>
+        Archibook cards come from <code>cards.csv</code>, and Info text is in <code>index.html</code>.
+      </p>
+      <button class="edit-btn" onclick="enterEdit()">✦ Edit layout</button>
+      <button class="edit-btn" style="background:var(--text)" onclick="openExport()">⤓ Export works.csv</button>
     </div>
   </div>
 
@@ -425,19 +307,25 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 <div id="detailPanel">
   <div class="det-inner">
     <button class="det-back" onclick="closeDetail()">← Archive</button>
-    <div class="det-hero" id="det-hero" onclick="openLB()"></div>
+    <div class="det-hero" id="det-hero" onclick="openLB(0)"></div>
     <div class="det-grid">
       <div><div class="det-title" id="det-title"></div><div class="det-short" id="det-short"></div></div>
       <div class="det-meta" id="det-meta"></div>
     </div>
     <div class="det-body" id="det-body"></div>
+    <div id="det-gallery-wrap" style="display:none">
+      <div class="det-gallery-label">All images</div>
+      <div class="det-gallery" id="det-gallery"></div>
+    </div>
   </div>
 </div>
 
 <!-- LIGHTBOX -->
-<div id="lightbox" onclick="closeLB()">
+<div id="lightbox">
   <button class="lb-close" onclick="closeLB()">✕</button>
+  <button class="lb-nav lb-prev" onclick="lbStep(-1,event)">‹</button>
   <div id="lbContent"></div>
+  <button class="lb-nav lb-next" onclick="lbStep(1,event)">›</button>
 </div>
 
 <!-- ARCHIBOOK LIGHTBOX -->
@@ -446,429 +334,261 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
   <div id="abLBImg"></div>
   <div class="ablb-cap" id="abLBCap"></div>
   <div class="ablb-loc" id="abLBLoc"></div>
+  <div class="ablb-desc" id="abLBDesc"></div>
 </div>
 
-<script src="config.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<!-- EXPORT -->
+<div class="exp-ov" id="expPanel">
+  <div class="exp-box">
+    <div class="exp-title">works.csv — copy or download, then replace the file in your project folder</div>
+    <textarea id="expCode" readonly></textarea>
+    <div class="exp-actions">
+      <button class="btn-p" onclick="downloadWorks()">Download works.csv</button>
+      <button class="btn-p" id="expCopyBtn" onclick="copyExport()">Copy</button>
+      <button class="btn-o" onclick="closeExport()">Close</button>
+    </div>
+  </div>
+</div>
+
 <script>
-const sb = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
-let loggedIn=false, editMode=false, sel=null, curItem=null;
-let editingWorkId=null, editingCardId=null;
+/* ══ AUTH (client-side, static) ══ */
+const AU='admin', AP='portfolio2025';
+let loggedIn=false, editMode=false, sel=null;
 
-function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 
-/* ══ DATA (defaults shown until Supabase responds) ══ */
+/* ══ INFO (edit here in index.html) ══ */
 let info={
   name:'Dylan Kim',
   role:'Architecture Student · Taipei, Taiwan',
   intro:'A collection of architecture & design works by Dylan Kim. [2024-2026]',
-  bio:'',
-  awards:'',
-  reach:'',
-  social:'',
-  design:'',
-  resume:'',
-  other:''
+  bio:"Taipei American School student with a sustained practice across 3D modeling, 2D drawing, and cross-cultural architectural research. Two-time IASAS representative in visual arts.\n\nMy work investigates how architecture encodes identity.",
+  awards:"2025 — IASAS Visual Arts Representative\n2024 — IASAS Visual Arts Representative\n2025 — TSID (Taiwan Society of Interior Design) 2025: 1st Prize\n2025 — TSID 2026: Honorable Mention\n2026 — AFSF (Architectural Foundation of San Francisco) 2026: Honorable Mention",
+  reach:"Email: mailto:dylan@email.com",
+  social:"Instagram: https://instagram.com",
+  design:"Rhino 3D,SketchUp,AutoCAD,Blender,Procreate,Adobe Suite,Physical Modeling",
+  resume:"Download CV: https://drive.google.com",
+  other:"Open to architecture conversations, mentorship, and collaborations."
 };
-let blocks=[];
-let cards=[];
+
+let blocks=[];   /* works */
+let cards=[];    /* archibook */
 let abMode='all';
+let lbList=[], lbIdx=0;
 
-/* ══ HELPERS ══ */
-const CAP_H=26;
-function ph(c,s=44){return `<div class="ph" style="background:${c}">${phSVG(s)}</div>`;}
-function phSVG(s=44){return `<svg width="${s}" height="${s}" viewBox="0 0 60 60" fill="none" opacity="0.12"><rect x="8" y="8" width="44" height="44" stroke="#555" stroke-width="1.5" fill="none"/><line x1="8" y1="30" x2="52" y2="30" stroke="#555" stroke-width=".75"/><line x1="30" y1="8" x2="30" y2="52" stroke="#555" stroke-width=".75"/></svg>`;}
-
-async function uploadImage(file,bucket,prefix){
-  const ext=(file.name.split('.').pop()||'png').toLowerCase();
-  const path=`${prefix}-${Date.now()}-${Math.random().toString(36).slice(2,8)}.${ext}`;
-  const {error}=await sb.storage.from(bucket).upload(path,file,{cacheControl:'3600',upsert:false});
-  if(error) throw error;
-  const {data}=sb.storage.from(bucket).getPublicUrl(path);
-  return data.publicUrl;
+/* ══ CSV PARSER ══ */
+function parseCSV(text){
+  const rows=[];let cur=[],val='',q=false;
+  text=text.replace(/\r\n/g,'\n').replace(/\r/g,'\n');
+  for(let i=0;i<text.length;i++){
+    const c=text[i],n=text[i+1];
+    if(q){ if(c=='"'&&n=='"'){val+='"';i++;} else if(c=='"'){q=false;} else val+=c; }
+    else { if(c=='"')q=true; else if(c==','){cur.push(val);val='';} else if(c=='\n'){cur.push(val);rows.push(cur);cur=[];val='';} else val+=c; }
+  }
+  if(val!==''||cur.length){cur.push(val);rows.push(cur);}
+  return rows.filter(r=>r.length&&r.some(c=>c.trim()!==''));
 }
+const phSVG='<svg width="46" height="46" viewBox="0 0 60 60" fill="none" opacity="0.12"><rect x="8" y="8" width="44" height="44" stroke="#555" stroke-width="1.5"/><line x1="8" y1="30" x2="52" y2="30" stroke="#555" stroke-width=".75"/><line x1="30" y1="8" x2="30" y2="52" stroke="#555" stroke-width=".75"/></svg>';
+function ph(c){return '<div class="ph" style="background:'+c+'">'+phSVG+'</div>';}
 
-/* ══ WORKS (Archive) — load / CRUD ══ */
-function rowToBlock(r){
-  return {id:r.id,title:r.title,type:r.type||'3D',year:r.year||'',medium:r.medium||'',status:r.status||'',
-    short:r.short||'',desc:r.description||'',img:r.image_url||'',fit:r.fit||'contain',color:r.color||'#f3f3f1',
-    x:Number(r.x)||0,y:Number(r.y)||0,w:Number(r.w)||40,h:Number(r.h)||320};
+/* ══ WORKS ══ */
+function autoLayout(items){
+  const colW=46,gap=4,xs=[1,51];let colH=[0,0];
+  return items.map((it,i)=>{
+    const col=colH[0]<=colH[1]?0:1;
+    const h=it.h||(300+(i%3)*70);
+    const y=colH[col];colH[col]+=h+34+gap*6;
+    return {...it,x:(it.x!=null?it.x:xs[col]),y:(it.y!=null?it.y:y),w:(it.w||colW),h};
+  });
 }
 async function loadWorks(){
-  const {data,error}=await sb.from('works').select('*').order('created_at',{ascending:true});
-  blocks = error ? [] : data.map(rowToBlock);
-  if(error) console.error('works load failed:',error.message);
-  renderCanvas();renderAdminWorkList();
+  try{
+    const r=await fetch('works.csv?_='+Date.now());
+    if(!r.ok) throw 0;
+    const rows=parseCSV(await r.text());
+    const h=rows[0].map(x=>x.trim().toLowerCase());
+    const gi=n=>h.indexOf(n);
+    let items=rows.slice(1).map((r,i)=>{
+      const g=(r[gi('gallery')]||'').split(';').map(s=>s.trim()).filter(Boolean);
+      const img=(r[gi('img')]||'').trim();
+      return {id:i+1,title:(r[gi('title')]||'Untitled').trim(),type:(r[gi('type')]||'').trim(),
+        year:(r[gi('year')]||'').trim(),medium:(r[gi('medium')]||'').trim(),status:(r[gi('status')]||'').trim(),
+        short:(r[gi('short')]||'').trim(),desc:(r[gi('desc')]||'').trim(),
+        img:img,gallery:g.length?g:(img?[img]:[]),color:(r[gi('color')]||'#f3f3f1').trim()||'#f3f3f1',
+        x:r[gi('x')]!==undefined&&r[gi('x')]!==''?parseFloat(r[gi('x')]):null,
+        y:r[gi('y')]!==undefined&&r[gi('y')]!==''?parseFloat(r[gi('y')]):null,
+        w:r[gi('w')]!==undefined&&r[gi('w')]!==''?parseFloat(r[gi('w')]):null,
+        h:r[gi('h')]!==undefined&&r[gi('h')]!==''?parseFloat(r[gi('h')]):null};
+    });
+    blocks=autoLayout(items);
+  }catch(e){blocks=[];console.error('works.csv load failed',e);}
+  renderCanvas();
 }
-async function upsertWork(payload,id){
-  const {error} = id
-    ? await sb.from('works').update(payload).eq('id',id)
-    : await sb.from('works').insert(payload);
-  if(error){alert('저장 실패: '+error.message);return false;}
-  await loadWorks();
-  return true;
-}
-async function deleteWork(id){
-  if(!confirm('Delete?'))return;
-  const {error}=await sb.from('works').delete().eq('id',id);
-  if(error){alert('삭제 실패: '+error.message);return;}
-  await loadWorks();
-}
-async function persistLayout(b){
-  const {error}=await sb.from('works').update({x:b.x,y:b.y,w:b.w,h:b.h}).eq('id',b.id);
-  if(error) console.error('layout save failed:',error.message);
-}
-
-/* ══ CANVAS ══ */
-function cvH(){return blocks.length?Math.max(...blocks.map(b=>b.y+b.h+CAP_H))+40:600;}
+function cvH(){return blocks.length?Math.max(...blocks.map(b=>b.y+b.h+34))+40:600;}
 function renderCanvas(){
   const cv=document.getElementById('archiveCanvas');
   const mobile=window.innerWidth<=760;
-  if(mobile){
-    cv.style.cssText='position:relative;width:100%;height:auto';
-    cv.innerHTML=blocks.map(b=>blockHTML(b,true)).join('');
-    return;
-  }
-  cv.style.cssText=`position:relative;width:100%;height:${cvH()}px`;
+  if(mobile){cv.style.cssText='position:relative;width:100%;height:auto';cv.innerHTML=blocks.map(b=>blockHTML(b,true)).join('');return;}
+  cv.style.cssText='position:relative;width:100%;height:'+cvH()+'px';
   cv.innerHTML=blocks.map(b=>blockHTML(b,false)).join('');
   if(editMode)attachDR();
 }
 function blockHTML(b,mobile){
-  const posStyle=mobile?'':`left:calc(${b.x}% );top:${b.y}px;width:${b.w}%;`;
-  return `
-    <div class="img-block${editMode&&!mobile?' edit-mode':''}" id="b${b.id}" data-id="${b.id}"
-      style="${posStyle}"
-      onclick="${editMode&&!mobile?`selBlock('${b.id}',event)`:`openDet('${b.id}')`}">
-      <div class="blk-tb" id="bt${b.id}">
-        <span style="color:#777;font-size:0.54rem;padding:0 4px">${esc(b.title.slice(0,14))}…</span>
-        <button class="tb-b" onclick="togFit('${b.id}',event)">Fit:${(b.fit||'contain').slice(0,3)}</button>
-        <button class="tb-b del" onclick="delBlock('${b.id}',event)">✕</button>
-      </div>
-      <div class="blk-img" style="background:${b.color};${mobile?'':`height:${b.h}px`}">
-        ${b.img?`<img src="${b.img}" alt="${esc(b.title)}" style="object-fit:${b.fit||'contain'}">`:ph(b.color)}
-      </div>
-      <div class="blk-cap">
-        ${esc(b.type||'3D')}<span class="cs">/</span><span class="ct">${esc(b.title)}</span><span class="cs">/</span>${esc(b.year)}
-      </div>
-      <div class="resize-h"></div>
-    </div>`;
+  const pos=mobile?'':'left:'+b.x+'%;top:'+b.y+'px;width:'+b.w+'%;';
+  return '<div class="img-block'+(editMode&&!mobile?' edit-mode':'')+'" id="b'+b.id+'" style="'+pos+'" '+
+    'onclick="'+(editMode&&!mobile?'selBlock('+b.id+',event)':'openDet('+b.id+')')+'">'+
+    '<div class="blk-tb"><span style="color:#777;font-size:0.54rem;padding:0 4px">'+esc(b.title.slice(0,16))+'</span></div>'+
+    '<div class="blk-img" style="background:'+b.color+';'+(mobile?'':'height:'+b.h+'px')+'">'+
+      (b.img?'<img src="'+encodeURI(b.img)+'" alt="'+esc(b.title)+'">':ph(b.color))+'</div>'+
+    '<div class="blk-cap">'+esc(b.type||'')+'<span class="cs">/</span><span class="ct">'+esc(b.title)+'</span><span class="cs">/</span>'+esc(b.year)+
+      (b.gallery.length>1?'<span class="cn">('+b.gallery.length+')</span>':'')+'</div>'+
+    '<div class="resize-h"></div></div>';
 }
-
-/* ══ DRAG & RESIZE ══ */
 function attachDR(){
-  const cv=document.getElementById('archiveCanvas');
-  const cw=cv.offsetWidth;
+  const cv=document.getElementById('archiveCanvas');const cw=cv.offsetWidth;
   blocks.forEach(b=>{
     const el=document.getElementById('b'+b.id);if(!el)return;
     const imgEl=el.querySelector('.blk-img');
     let drag=false,sx,sy,ox,oy;
-    el.addEventListener('mousedown',e=>{
-      if(e.target.classList.contains('resize-h')||e.target.closest('.blk-tb'))return;
-      drag=true;el.classList.add('dragging');
-      sx=e.clientX;sy=e.clientY;ox=b.x;oy=b.y;e.preventDefault();
-    });
-    document.addEventListener('mousemove',e=>{if(!drag)return;
-      b.x=Math.max(0,Math.min(100-b.w,ox+(e.clientX-sx)/cw*100));
-      b.y=Math.max(0,oy+(e.clientY-sy));
-      el.style.left=b.x+'%';el.style.top=b.y+'px';
-      cv.style.height=cvH()+'px';
-    });
-    document.addEventListener('mouseup',()=>{if(drag){drag=false;el.classList.remove('dragging');persistLayout(b);}});
+    el.addEventListener('mousedown',e=>{if(e.target.classList.contains('resize-h'))return;if(!editMode)return;drag=true;el.classList.add('dragging');sx=e.clientX;sy=e.clientY;ox=b.x;oy=b.y;e.preventDefault();});
+    document.addEventListener('mousemove',e=>{if(!drag)return;b.x=Math.max(0,Math.min(100-b.w,ox+(e.clientX-sx)/cw*100));b.y=Math.max(0,oy+(e.clientY-sy));el.style.left=b.x+'%';el.style.top=b.y+'px';cv.style.height=cvH()+'px';});
+    document.addEventListener('mouseup',()=>{if(drag){drag=false;el.classList.remove('dragging');}});
     const rh=el.querySelector('.resize-h');if(!rh)return;
     let res=false,rx,ry,rw,rH;
     rh.addEventListener('mousedown',e=>{res=true;rx=e.clientX;ry=e.clientY;rw=b.w;rH=b.h;e.preventDefault();e.stopPropagation();});
-    document.addEventListener('mousemove',e=>{if(!res)return;
-      b.w=Math.max(10,Math.min(100-b.x,rw+(e.clientX-rx)/cw*100));
-      b.h=Math.max(80,rH+(e.clientY-ry));
-      el.style.width=b.w+'%';imgEl.style.height=b.h+'px';
-      cv.style.height=cvH()+'px';
-    });
-    document.addEventListener('mouseup',()=>{if(res){res=false;persistLayout(b);}});
+    document.addEventListener('mousemove',e=>{if(!res)return;b.w=Math.max(10,Math.min(100-b.x,rw+(e.clientX-rx)/cw*100));b.h=Math.max(80,rH+(e.clientY-ry));el.style.width=b.w+'%';imgEl.style.height=b.h+'px';cv.style.height=cvH()+'px';});
+    document.addEventListener('mouseup',()=>{res=false;});
   });
 }
-function selBlock(id,e){e.stopPropagation();document.querySelectorAll('.img-block').forEach(el=>el.classList.remove('selected'));sel=id;document.getElementById('b'+id)?.classList.add('selected');}
-async function delBlock(id,e){e.stopPropagation();await deleteWork(id);}
-async function togFit(id,e){
-  e.stopPropagation();
-  const b=blocks.find(x=>x.id===id);if(!b)return;
-  b.fit=b.fit==='contain'?'cover':'contain';
-  renderCanvas();selBlock(id,{stopPropagation:()=>{}});
-  await sb.from('works').update({fit:b.fit}).eq('id',id);
-}
+function selBlock(id,e){e.stopPropagation();document.querySelectorAll('.img-block').forEach(el=>el.classList.remove('selected'));sel=id;document.getElementById('b'+id).classList.add('selected');}
 
-/* ══ EDIT MODE ══ */
+/* ══ EDIT / EXPORT ══ */
 function enterEdit(){editMode=true;document.getElementById('editBar').classList.add('show');showPage('archive');renderCanvas();}
 function exitEdit(){editMode=false;sel=null;document.getElementById('editBar').classList.remove('show');renderCanvas();}
-async function addBlockBlank(){
-  const payload={title:'New Work',type:'3D',year:'2025',medium:'',status:'',short:'',description:'',color:'#f3f3f1',fit:'contain',x:5,y:20,w:40,h:320};
-  const {error}=await sb.from('works').insert(payload);
-  if(error){alert('추가 실패: '+error.message);return;}
-  await loadWorks();
+function buildWorksCSV(){
+  const cols=['title','type','year','medium','status','short','desc','img','gallery','color','x','y','w','h'];
+  const q=v=>{v=String(v==null?'':v);return /[",\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;};
+  let out=cols.join(',')+'\n';
+  blocks.forEach(b=>{
+    const row=[b.title,b.type,b.year,b.medium,b.status,b.short,b.desc,b.img,b.gallery.join(';'),b.color,
+      Math.round(b.x*10)/10,Math.round(b.y),Math.round(b.w*10)/10,Math.round(b.h)];
+    out+=row.map(q).join(',')+'\n';
+  });
+  return out;
 }
+function openExport(){document.getElementById('expCode').value=buildWorksCSV();document.getElementById('expPanel').classList.add('open');}
+function closeExport(){document.getElementById('expPanel').classList.remove('open');}
+function copyExport(){const t=document.getElementById('expCode');t.select();try{navigator.clipboard.writeText(t.value);}catch(e){document.execCommand('copy');}const b=document.getElementById('expCopyBtn');const o=b.textContent;b.textContent='Copied';setTimeout(()=>b.textContent=o,1400);}
+function downloadWorks(){const blob=new Blob([buildWorksCSV()],{type:'text/csv'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='works.csv';a.click();URL.revokeObjectURL(u);}
 
-/* ══ WORK FORM (add / edit) ══ */
-function openWorkForm(id){
-  document.getElementById('addBlockForm').classList.add('open');
-  if(id){
-    const b=blocks.find(x=>x.id===id);if(!b)return;
-    editingWorkId=id;
-    document.getElementById('nb-title').value=b.title;
-    document.getElementById('nb-type').value=b.type;
-    document.getElementById('nb-year').value=b.year;
-    document.getElementById('nb-med').value=b.medium;
-    document.getElementById('nb-stat').value=b.status;
-    document.getElementById('nb-short').value=b.short;
-    document.getElementById('nb-desc').value=b.desc;
-    document.getElementById('nb-color').value=b.color;
-    document.getElementById('nb-form-title').textContent='Edit Work';
-  } else {
-    editingWorkId=null;
-    ['nb-title','nb-type','nb-year','nb-med','nb-stat','nb-short','nb-desc'].forEach(i=>document.getElementById(i).value='');
-    document.getElementById('nb-color').value='#f3f3f1';
-    document.getElementById('nb-form-title').textContent='New Work';
-  }
-  document.getElementById('nb-imgfile').value='';
-}
-async function saveWorkForm(){
-  const t=document.getElementById('nb-title').value.trim();
-  if(!t){alert('Title required');return;}
-  const btn=document.getElementById('nb-save-btn');btn.disabled=true;btn.textContent='Saving…';
-  try{
-    const payload={
-      title:t,type:document.getElementById('nb-type').value||'3D',year:document.getElementById('nb-year').value,
-      medium:document.getElementById('nb-med').value,status:document.getElementById('nb-stat').value,
-      short:document.getElementById('nb-short').value,description:document.getElementById('nb-desc').value,
-      color:document.getElementById('nb-color').value,
-    };
-    const file=document.getElementById('nb-imgfile').files[0];
-    if(file) payload.image_url=await uploadImage(file,'works-images','work');
-    if(!editingWorkId){payload.x=2;payload.y=cvH();payload.w=42;payload.h=340;}
-    const ok=await upsertWork(payload,editingWorkId);
-    if(ok){document.getElementById('addBlockForm').classList.remove('open');editingWorkId=null;}
-  }catch(err){alert('오류: '+err.message);}
-  finally{btn.disabled=false;btn.textContent='Save';}
-}
-
-/* ══ DETAIL ══ */
+/* ══ DETAIL + GALLERY ══ */
+let curGallery=[];
 function openDet(id){
   if(editMode)return;
-  const b=blocks.find(x=>x.id===id);if(!b)return;curItem=b;
+  const b=blocks.find(x=>x.id===id);if(!b)return;
+  curGallery=b.gallery.slice();
   document.getElementById('det-title').textContent=b.title;
   document.getElementById('det-short').textContent=b.short||'';
   document.getElementById('det-body').textContent=b.desc||'';
-  document.getElementById('det-hero').innerHTML=b.img?`<img src="${b.img}" alt="${esc(b.title)}" style="object-fit:${b.fit||'contain'};width:100%;height:100%">`:`<div style="width:100%;height:100%;background:${b.color};display:flex;align-items:center;justify-content:center">${phSVG(60)}</div>`;
-  document.getElementById('det-meta').innerHTML=[{l:'Year',v:b.year},{l:'Type',v:b.type||'3D'},{l:'Medium',v:b.medium||'—'},{l:'Status',v:b.status||'—'}].map(m=>`<div><div class="dm-l">${esc(m.l)}</div><div class="dm-v">${esc(m.v)}</div></div>`).join('');
+  const hero=b.img||b.gallery[0]||'';
+  document.getElementById('det-hero').innerHTML=hero?'<img src="'+encodeURI(hero)+'" alt="'+esc(b.title)+'">':'<div style="width:100%;height:100%;background:'+b.color+';display:flex;align-items:center;justify-content:center">'+phSVG+'</div>';
+  document.getElementById('det-meta').innerHTML=[['Year',b.year],['Type',b.type||'—'],['Medium',b.medium||'—'],['Status',b.status||'—'],['Images',b.gallery.length]].map(m=>'<div><div class="dm-l">'+m[0]+'</div><div class="dm-v">'+esc(m[1])+'</div></div>').join('');
+  const gw=document.getElementById('det-gallery-wrap');
+  if(b.gallery.length>1){
+    gw.style.display='block';
+    document.getElementById('det-gallery').innerHTML=b.gallery.map((g,i)=>'<div class="det-gitem" onclick="openLB('+i+')"><img src="'+encodeURI(g)+'" alt=""></div>').join('');
+  } else gw.style.display='none';
   const p=document.getElementById('detailPanel');p.classList.add('open');p.scrollTop=0;document.body.style.overflow='hidden';
 }
 function closeDetail(){document.getElementById('detailPanel').classList.remove('open');document.body.style.overflow='';}
-function openLB(){if(curItem?.img){document.getElementById('lbContent').innerHTML=`<img src="${curItem.img}" alt="">`;document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';}}
+function openLB(i){
+  lbList=curGallery.length?curGallery:[]; if(!lbList.length)return;
+  lbIdx=i||0;renderLB();document.getElementById('lightbox').classList.add('open');document.body.style.overflow='hidden';
+}
+function renderLB(){document.getElementById('lbContent').innerHTML='<img src="'+encodeURI(lbList[lbIdx])+'" alt="">';}
+function lbStep(d,e){if(e)e.stopPropagation();if(!lbList.length)return;lbIdx=(lbIdx+d+lbList.length)%lbList.length;renderLB();}
 function closeLB(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
+document.getElementById('lightbox').addEventListener('click',e=>{if(e.target.id==='lightbox'||e.target.id==='lbContent')closeLB();});
+
+/* ══ ARCHIBOOK ══ */
+async function loadCards(){
+  try{
+    const r=await fetch('cards.csv?_='+Date.now());
+    if(!r.ok) throw 0;
+    const rows=parseCSV(await r.text());
+    const h=rows[0].map(x=>x.trim().toLowerCase());
+    const gi=n=>h.indexOf(n);
+    cards=rows.slice(1).map(r=>({n:parseInt(r[gi('n')])||0,name:(r[gi('name')]||'').trim(),
+      category:(r[gi('category')]||'').trim(),description:gi('description')>=0?(r[gi('description')]||'').trim():'',
+      visited:/^(yes|y|true|1)$/i.test((r[gi('visited')]||'').trim()),img:(r[gi('img')]||'').trim()}));
+  }catch(e){cards=[];console.error('cards.csv load failed',e);}
+  renderArchibook();
+}
+function renderArchibook(){
+  const total=cards.length,visited=cards.filter(c=>c.visited).length,named=cards.filter(c=>c.name).length;
+  document.getElementById('ab-stats').innerHTML=[[total,'Structures Drawn'],[visited,'Visited in Person'],[named,'Catalogued']].map(s=>'<div><div class="ab-stat-n">'+s[0]+'</div><div class="ab-stat-l">'+s[1]+'</div></div>').join('');
+  const list=abMode==='visited'?cards.filter(c=>c.visited):cards;
+  document.getElementById('abGrid').innerHTML=list.map(c=>{
+    const nn='No.'+String(c.n).padStart(2,'0');
+    return '<div class="ab-card" onclick="openABLB('+c.n+')">'+
+      (c.img?'<img src="'+encodeURI(c.img)+'" alt="'+esc(c.name||nn)+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="ab-ph" style="display:none">'+nn+'</div>':'<div class="ab-ph">'+nn+'</div>')+
+      (c.visited?'<div class="ab-visited">Visited</div>':'')+
+      (c.name?'<div class="ab-card-meta"><div class="ab-cm-name">'+esc(c.name)+'</div><div class="ab-cm-loc">'+esc(c.category||'')+'</div></div>':'')+
+      '</div>';
+  }).join('');
+}
+function abFilter(m){abMode=m;document.getElementById('abtog-all').classList.toggle('active',m==='all');document.getElementById('abtog-visited').classList.toggle('active',m==='visited');renderArchibook();}
+function openABLB(n){
+  const c=cards.find(x=>x.n===n);if(!c)return;
+  document.getElementById('abLBImg').innerHTML=c.img?'<img src="'+encodeURI(c.img)+'" alt="'+esc(c.name||'')+'">':'<div style="width:60vw;height:55vh;background:#2a2722;display:flex;align-items:center;justify-content:center;color:#8a8478;font-family:monospace">CARD No.'+String(c.n).padStart(2,'0')+'</div>';
+  document.getElementById('abLBCap').textContent=c.name||('Plate No.'+String(c.n).padStart(2,'0'));
+  document.getElementById('abLBLoc').textContent=c.category||'';
+  document.getElementById('abLBDesc').textContent=c.description||'';
+  document.getElementById('abLightbox').classList.add('open');document.body.style.overflow='hidden';
+}
+function closeABLB(){document.getElementById('abLightbox').classList.remove('open');document.body.style.overflow='';}
 
 /* ══ INFO ══ */
-function parseLinks(str){return (str||'').split('\n').filter(Boolean).map(l=>{const ci=l.indexOf(':');return `<div class="info-link-row"><a href="${esc(l.substring(ci+1).trim())}" target="_blank" rel="noopener">${esc(l.substring(0,ci).trim())}</a><span class="info-link-arrow">↗</span></div>`;}).join('');}
-async function loadInfo(){
-  const {data,error}=await sb.from('site_info').select('*').eq('id',1).maybeSingle();
-  if(error) console.error('info load failed:',error.message);
-  if(data) info={...info,...data};
-  renderInfo();
-}
+function parseLinks(str){return (str||'').split('\n').filter(Boolean).map(l=>{const ci=l.indexOf(':');return '<div class="info-link-row"><a href="'+esc(l.substring(ci+1).trim())+'" target="_blank" rel="noopener">'+esc(l.substring(0,ci).trim())+'</a><span class="info-link-arrow">↗</span></div>';}).join('');}
 function renderInfo(){
   document.getElementById('v-name').textContent=info.name;
   document.getElementById('v-role').textContent=info.role;
   document.getElementById('archiveIntro').textContent=info.intro||'';
-  document.getElementById('v-bio').innerHTML=esc(info.bio||'').replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
-  document.getElementById('v-awards').innerHTML=(info.awards||'').split('\n').filter(Boolean).map(l=>{const i=l.indexOf('—');return `<div class="award-row"><span class="aw-n">${esc(l.substring(i+1).trim())}</span><span class="aw-y">${esc(l.substring(0,i).trim())}</span></div>`;}).join('');
+  document.getElementById('v-bio').innerHTML=esc(info.bio).replace(/\n\n/g,'<br><br>').replace(/\n/g,'<br>');
+  document.getElementById('v-awards').innerHTML=(info.awards||'').split('\n').filter(Boolean).map(l=>{const i=l.indexOf('—');return '<div class="award-row"><span class="aw-n">'+esc(l.substring(i+1).trim())+'</span><span class="aw-y">'+esc(l.substring(0,i).trim())+'</span></div>';}).join('');
   document.getElementById('v-reach').innerHTML=parseLinks(info.reach);
   document.getElementById('v-social').innerHTML=parseLinks(info.social);
-  document.getElementById('v-design').innerHTML=(info.design||'').split(',').filter(Boolean).map(s=>`<span class="stag">${esc(s.trim())}</span>`).join('');
-  const rp=info.resume||'';const rci=rp.indexOf(':');
-  document.getElementById('v-resume').innerHTML=(rp&&rci>-1)?`<div class="info-link-row"><a href="${esc(rp.substring(rci+1).trim())}" target="_blank" rel="noopener">${esc(rp.substring(0,rci).trim())}</a><span class="info-link-arrow">↗</span></div>`:'';
-  document.getElementById('v-other').innerHTML=esc(info.other||'').replace(/\n/g,'<br>');
-}
-async function saveInfo(){
-  const payload={
-    id:1,
-    name:document.getElementById('ei-name').value||info.name,
-    role:document.getElementById('ei-role').value||info.role,
-    intro:document.getElementById('ei-intro').value||info.intro,
-    bio:document.getElementById('ei-bio').value||info.bio,
-    awards:document.getElementById('ei-awards').value||info.awards,
-    reach:document.getElementById('ei-reach').value||info.reach,
-    social:document.getElementById('ei-social').value||info.social,
-    design:document.getElementById('ei-design').value||info.design,
-    resume:document.getElementById('ei-resume').value||info.resume,
-    other:document.getElementById('ei-other').value||info.other,
-  };
-  const {error}=await sb.from('site_info').upsert(payload);
-  if(error){alert('저장 실패: '+error.message);return;}
-  info=payload;renderInfo();alert('저장되었습니다.');
-}
-function loadInfoEditor(){
-  document.getElementById('ei-name').value=info.name;document.getElementById('ei-role').value=info.role;
-  document.getElementById('ei-intro').value=info.intro||'';document.getElementById('ei-bio').value=info.bio;
-  document.getElementById('ei-awards').value=info.awards;document.getElementById('ei-reach').value=info.reach||'';
-  document.getElementById('ei-social').value=info.social||'';document.getElementById('ei-design').value=info.design||'';
-  document.getElementById('ei-resume').value=info.resume||'';document.getElementById('ei-other').value=info.other||'';
+  document.getElementById('v-design').innerHTML=(info.design||'').split(',').filter(Boolean).map(s=>'<span class="stag">'+esc(s.trim())+'</span>').join('');
+  const rp=info.resume||'',rci=rp.indexOf(':');
+  document.getElementById('v-resume').innerHTML=(rp&&rci>-1)?'<div class="info-link-row"><a href="'+esc(rp.substring(rci+1).trim())+'" target="_blank" rel="noopener">'+esc(rp.substring(0,rci).trim())+'</a><span class="info-link-arrow">↗</span></div>':'';
+  document.getElementById('v-other').innerHTML=esc(info.other).replace(/\n/g,'<br>');
 }
 
-/* ══ AUTH ══ */
-async function initAuth(){
-  const {data:{session}}=await sb.auth.getSession();
-  loggedIn=!!session;updateAdminUI();
-  sb.auth.onAuthStateChange((_event,session)=>{loggedIn=!!session;updateAdminUI();});
+/* ══ ADMIN ══ */
+function doLogin(){
+  if(document.getElementById('lu').value===AU&&document.getElementById('lp').value===AP){
+    loggedIn=true;document.getElementById('loginBox').style.display='none';document.getElementById('adminDash').style.display='block';
+  } else document.getElementById('lerr').style.display='block';
 }
-function updateAdminUI(){
-  document.getElementById('loginBox').style.display=loggedIn?'none':'block';
-  document.getElementById('adminDash').style.display=loggedIn?'block':'none';
-  if(loggedIn){renderAdminLists();loadInfoEditor();}
-}
-async function doLogin(){
-  const email=document.getElementById('lu').value.trim();
-  const password=document.getElementById('lp').value;
-  const {error}=await sb.auth.signInWithPassword({email,password});
-  const err=document.getElementById('lerr');
-  if(error){err.textContent=error.message;err.style.display='block';}
-  else err.style.display='none';
-}
-async function doLogout(){await sb.auth.signOut();exitEdit();['lu','lp'].forEach(i=>document.getElementById(i).value='');}
+function doLogout(){loggedIn=false;exitEdit();document.getElementById('loginBox').style.display='block';document.getElementById('adminDash').style.display='none';document.getElementById('lu').value='';document.getElementById('lp').value='';document.getElementById('lerr').style.display='none';}
 
-/* ══ ADMIN LISTS ══ */
-function togForm(id){document.getElementById(id).classList.toggle('open');}
-function renderAdminLists(){renderAdminWorkList();renderAdminCardList();}
-function renderAdminWorkList(){
-  document.getElementById('adminBlockList').innerHTML=blocks.map(b=>`
-    <div class="arow">
-      <div><div class="arow-n">${esc(b.title)}</div><div class="arow-s">${esc(b.type||'3D')} · ${esc(b.year)} · ${b.w.toFixed(0)}% × ${b.h}px</div></div>
-      <div style="display:flex;gap:0.4rem">
-        <button class="btn-d" onclick="openWorkForm('${b.id}');document.getElementById('addBlockForm').classList.add('open')">Edit</button>
-        <button class="btn-d" onclick="deleteWork('${b.id}')">Delete</button>
-      </div>
-    </div>`).join('');
-}
-
-/* ══ CARDS (Archibook) — load / CRUD ══ */
-function rowToCard(r){
-  return {id:r.id,n:r.n,name:r.name||'',category:r.category||'',description:r.description||'',visited:!!r.visited,img:r.image_url||''};
-}
-async function loadCards(){
-  const {data,error}=await sb.from('cards').select('*').order('n',{ascending:true});
-  cards = error ? [] : data.map(rowToCard);
-  if(error) console.error('cards load failed:',error.message);
-  renderArchibook();renderAdminCardList();
-}
-function renderArchibook(){
-  const total=cards.length;
-  const visited=cards.filter(c=>c.visited).length;
-  const named=cards.filter(c=>c.name).length;
-  document.getElementById('ab-stats').innerHTML=[
-    {n:total,l:'Structures Drawn'},
-    {n:visited,l:'Visited in Person'},
-    {n:named,l:'Catalogued'},
-  ].map(s=>`<div><div class="ab-stat-n">${s.n}</div><div class="ab-stat-l">${esc(s.l)}</div></div>`).join('');
-
-  const list=abMode==='visited'?cards.filter(c=>c.visited):cards;
-  document.getElementById('abGrid').innerHTML=list.map(c=>`
-    <div class="ab-card" onclick="openABLB(${c.n})">
-      ${c.img?`<img src="${c.img}" alt="${esc(c.name||'Card '+c.n)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="ab-ph" style="display:none">No.${String(c.n).padStart(2,'0')}</div>`:`<div class="ab-ph">No.${String(c.n).padStart(2,'0')}</div>`}
-      ${c.visited?`<div class="ab-visited">Visited</div>`:''}
-      ${c.name?`<div class="ab-card-meta"><div class="ab-cm-name">${esc(c.name)}</div><div class="ab-cm-loc">${esc(c.category||'')}</div></div>`:''}
-    </div>`).join('');
-}
-function abFilter(mode,btn){
-  abMode=mode;
-  document.getElementById('abtog-all').classList.toggle('active',mode==='all');
-  document.getElementById('abtog-visited').classList.toggle('active',mode==='visited');
-  renderArchibook();
-}
-function openABLB(n){
-  const c=cards.find(x=>x.n===n);if(!c)return;
-  document.getElementById('abLBImg').innerHTML=c.img?`<img src="${c.img}" alt="${esc(c.name||'')}">`:`<div style="width:60vw;height:60vh;background:#2a2722;display:flex;align-items:center;justify-content:center;color:#8a8478;font-family:'IBM Plex Mono',monospace;letter-spacing:0.1em">CARD No.${String(c.n).padStart(2,'0')}</div>`;
-  document.getElementById('abLBCap').textContent=c.name||`Plate No.${String(c.n).padStart(2,'0')}`;
-  document.getElementById('abLBLoc').textContent=c.category||'';
-  document.getElementById('abLightbox').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeABLB(){document.getElementById('abLightbox').classList.remove('open');document.body.style.overflow='';}
-
-/* ══ CARD FORM (add / edit) ══ */
-function openCardForm(id){
-  document.getElementById('addCardForm').classList.add('open');
-  if(id){
-    const c=cards.find(x=>x.id===id);if(!c)return;
-    editingCardId=id;
-    document.getElementById('nc-n').value=c.n;
-    document.getElementById('nc-category').value=c.category||'';
-    document.getElementById('nc-name').value=c.name||'';
-    document.getElementById('nc-desc').value=c.description||'';
-    document.getElementById('nc-visited').checked=!!c.visited;
-    document.getElementById('nc-form-title').textContent='Edit Card';
-  } else {
-    editingCardId=null;
-    ['nc-n','nc-category','nc-name','nc-desc'].forEach(i=>document.getElementById(i).value='');
-    document.getElementById('nc-visited').checked=false;
-    document.getElementById('nc-form-title').textContent='New Card';
-  }
-  document.getElementById('nc-imgfile').value='';
-}
-async function saveCardForm(){
-  const n=parseInt(document.getElementById('nc-n').value);
-  if(!n){alert('Number required');return;}
-  const btn=document.getElementById('nc-save-btn');btn.disabled=true;btn.textContent='Saving…';
-  try{
-    const payload={
-      n,name:document.getElementById('nc-name').value.trim(),
-      category:document.getElementById('nc-category').value.trim(),
-      description:document.getElementById('nc-desc').value.trim(),
-      visited:document.getElementById('nc-visited').checked,
-    };
-    const file=document.getElementById('nc-imgfile').files[0];
-    if(file) payload.image_url=await uploadImage(file,'cards-images','card');
-    const {error}=await sb.from('cards').upsert(payload,{onConflict:'n'});
-    if(error){alert('저장 실패: '+error.message);return;}
-    document.getElementById('addCardForm').classList.remove('open');
-    editingCardId=null;
-    await loadCards();
-  }catch(err){alert('오류: '+err.message);}
-  finally{btn.disabled=false;btn.textContent='Save';}
-}
-async function deleteCard(id){
-  if(!confirm('Delete?'))return;
-  const {error}=await sb.from('cards').delete().eq('id',id);
-  if(error){alert('삭제 실패: '+error.message);return;}
-  await loadCards();
-}
-function renderAdminCardList(){
-  const box=document.getElementById('adminCardList');if(!box)return;
-  const q=(document.getElementById('ac-search')?.value||'').toLowerCase();
-  const filtered=cards.filter(c=>!q||String(c.n).includes(q)||(c.name||'').toLowerCase().includes(q));
-  const list=filtered.slice(0,40);
-  box.innerHTML=list.map(c=>`
-    <div class="arow">
-      <div><div class="arow-n">No.${String(c.n).padStart(3,'0')} — ${esc(c.name||'(untitled)')}</div><div class="arow-s">${esc(c.category||'')}${c.visited?' · Visited':''}</div></div>
-      <div style="display:flex;gap:0.4rem">
-        <button class="btn-d" onclick="openCardForm('${c.id}')">Edit</button>
-        <button class="btn-d" onclick="deleteCard('${c.id}')">Delete</button>
-      </div>
-    </div>`).join('') + (filtered.length>40?`<div class="arow-s" style="padding:0.5rem 0">Showing 40 of ${filtered.length} — search to narrow down</div>`:'');
-}
-
-/* ══ PAGE NAV ══ */
+/* ══ NAV ══ */
 const PAGES=['archive','archibook','info','admin'];
 function showPage(p){
   PAGES.forEach(id=>{document.getElementById('page-'+id).classList.toggle('active',id===p);['hn-','dn-'].forEach(pre=>{const el=document.getElementById(pre+id);if(el)el.classList.toggle('active',id===p);});});
-  closeDetail();closeLB();closeABLB();
+  closeDetail();closeLB();closeABLB();closeExport();
   if(p==='archibook')renderArchibook();
   if(p==='info')renderInfo();
-  if(p==='admin'){renderAdminLists();if(loggedIn)loadInfoEditor();}
 }
 function toggleDrawer(){document.getElementById('drawer').classList.toggle('open');}
 
 /* ══ INIT ══ */
-showPage('archive');renderInfo();
-initAuth();loadInfo();loadWorks();loadCards();
+showPage('archive');renderInfo();loadWorks();loadCards();
 let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(renderCanvas,150);});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeDetail();closeLB();if(editMode)exitEdit();}});
-document.getElementById('archiveCanvas').addEventListener('click',e=>{if(e.target===e.currentTarget&&editMode){sel=null;document.querySelectorAll('.img-block').forEach(el=>el.classList.remove('selected'));}});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){closeDetail();closeLB();closeABLB();closeExport();if(editMode)exitEdit();}
+  if(document.getElementById('lightbox').classList.contains('open')){if(e.key==='ArrowLeft')lbStep(-1);if(e.key==='ArrowRight')lbStep(1);}
+});
 </script>
 </body>
 </html>

@@ -1,156 +1,243 @@
 n,name,category,description,visited,img
-1,20 Fenchurch Street,Landmark,"The tower gets wider as it goes up, so it looks top heavy on purpose. At the top there is a huge glass roof that sticks out over the street.",yes,cards/card1.png
-2,111 West 57th Street,Cultural,"Thin terracotta piers run straight up the tower, which makes it look even narrower than it already is. It is the slimmest skyscraper in the world, and it sits on a very tight lot.",no,cards/card2.png
-3,1000 Trees,Landmark,"The building has rows of concrete columns, and each one holds a real tree on top. The columns step up like a terraced hill that someone dropped into the city.",yes,cards/card3.png
-4,Abbey of Mont Saint-Michel,Heritage,"Layers of granite climb the rock in a rough pyramid shape, which makes the abbey look like it grew straight out of the island.",no,cards/card4.png
-5,Alhambra Palace,Heritage,"The palace is covered in detailed geometric tiles and has open courtyards, which give it a layered feel where one quiet space leads into the next.",no,cards/card5.png
-6,Allianz Arena,Stadium,"Puffy diamond shaped panels cover the whole stadium in a soft skin, which lights up and changes color at night.",yes,cards/card6.png
-7,Amba Vilas Palace ,Heritage,"Domes and arched walkways stack up in classic Indo-Saracenic style, which builds up toward a tall tower in the center.",no,cards/card7.png
-8,Anfield,Stadium,"The stands are steep and lean in close to the pitch, which packs the crowd in tight and makes it loud.",no,cards/card8.png
-9,Arch of Triumph,Heritage,Heavy stone piers and a deep carved ceiling give the arch its strict symmetry. It stands right where a dozen big avenues meet.,yes,cards/card9.png
-10,ArtScience Museum,Cultural,"Ten petal shaped fingers open out from the base like a lotus flower, which catch rainwater and send it down to a pool in the middle.",yes,cards/card10.png
-11,Auditorio de Tenerife,Landmark,"A huge curved concrete roof sweeps up and over the building like a frozen wave, which hangs above the coastline.",no,cards/card11.png
-12,Beijing National Stadium,Stadium,"Tangled steel beams wrap around the bowl of seats in a messy lattice, which is exactly why people call it the Bird's Nest.",no,cards/card12.png
-13,Olympiastadion Berlin,Stadium,"Heavy stone columns line up around a stadium that is sunk into the ground, which settles the whole thing low into the land.",no,cards/card13.png
-14,Santiago Bernab?u Stadium,Stadium,"A shiny metal skin can open and close around the stands, which pulls a busy city stadium together into one smooth, reflective shape.",yes,cards/card14.png
-15,Bibliotheca Alexandrina,Cultural,"A giant tilted disk of granite and glass leans toward the sea. Inside, it drops down into a wide reading room with stepped levels.",no,cards/card15.png
-16,The Blue Mosque,Heritage,"Half domes step down from the main dome, and six thin minarets rise around it. They lead into a huge interior that is covered in tiles.",yes,cards/card16.png
-17,Buckingham Palace,Heritage,"A long, even classical front with a central entrance wraps around a big closed courtyard, which keeps the whole thing calm and symmetrical.",yes,cards/card17.png
-18,Fosun Foundation,Cultural,"Three layers of bronze tubes slowly turn around the building like a stage curtain, which opens and closes the view to the river.",yes,cards/card18.png
-19,Bulguksa Temple,Heritage,"Stone platforms and locked wooden brackets stack up in careful order, which lifts the wooden halls above the terraced hillside. It shows off Silla era craft.",yes,cards/card19.png
-20,Burj Al Arab,Landmark,A big white sail made of coated fabric rises off its own man made island. Its shape comes from the sail of a traditional boat.,yes,cards/card20.png
-21,Burj Khalifa,Landmark,"The floor plan is a Y shape with three arms, which keeps the world's tallest tower stiff as it spirals up and cuts through the wind.",yes,cards/card21.png
-22,Camp Nou,Stadium,"Huge tilted concrete tiers stack outward to hold one of the biggest crowds in football, which all face inward toward the field.",yes,cards/card22.png
-23,Capital Gate,Landmark,"A diagonal steel frame lets the tower lean a bold 18 degrees to one side and still stay up, which braces it against wind and earthquakes.",no,cards/card23.png
-24,Casa Batll?,Private,"Bony, uneven balconies and rippled colored tiles cover the front, which makes the building look almost alive, like it is made of bone and skin.",yes,cards/card24.png
-25,Casa Vicens,Private,"Patterned ceramic tiles and colorful brick cover the house in Moorish style decoration. It mixes straight lines with plant like detail, and it is one of Gaud?'s earliest works.",yes,cards/card25.png
-26,Centre Pompidou,Cultural,"All the pipes, ducts, and structure are pushed to the outside and color coded, which leaves the floors inside wide open and easy to change around.",no,cards/card26.png
-27,Chapel on the Water,Heritage,"Two L shaped concrete walls frame the view outside, which sets the plain, quiet chapel right at the edge of a still pond.",no,cards/card27.png
-28,Cathedral of Santa Maria del Fiore ,Heritage,"A massive double shell brick dome, which was a risky piece of engineering back then, sits above a front that is covered in patterned marble.",yes,cards/card28.png
-29,Church of Light,Heritage,"A cross is cut clean through a bare concrete wall, which lets a cross of bright daylight do all the decoration inside.",no,cards/card29.png
-30,Coal Drops Yard,Public,"Two old Victorian coal sheds got new curved roofs that reach toward each other, which forms a covered street between the brick buildings.",yes,cards/card30.png
-31,Cologne Cathedral,Heritage,"Stone tracery and thin buttresses push straight up in a dense, sharp lattice, which looks like it pierces the sky.",no,cards/card31.png
-32,Colosseum,Heritage,"Stacked rows of arches and stepped stone tiers ring the arena, which is built from layer on layer of vaults.",yes,cards/card32.png
-33,Dongdaemun Design Plaza,Landmark,"Smooth aluminum panels and soft curves let the building bend and roll like a landscape, which has no hard edges anywhere.",yes,cards/card33.png
-34,Dubai Frame,Landmark,"A giant gold rectangle stands empty in the middle, which frames old Dubai on one side and new Dubai on the other.",yes,cards/card34.png
-35,Eiffel Tower,Landmark,Open iron lattice lets you see right through the tower as it gets narrower toward the top. The metal web is built so the wind passes through it.,yes,cards/card35.png
-36,Empire State Building,Landmark,"Stepped Art Deco setbacks climb to a sharp vertical peak, which helped define the New York skyline.",yes,cards/card36.png
-37,Emporia,Public,"A curved wall of golden glass gives the building a soft, liquid look on the outside, even though it is solid underneath.",no,cards/card37.png
-38,Fallingwater,Private,"Concrete decks reach out over a stream, which anchors the house into the rock so it looks like it grew there.",no,cards/card38.png
-39,Ferrari World Abu Dhabi,Cultural,"A wide red roof spreads low and flat over the building, and its curves come straight from the body of a sports car.",no,cards/card39.png
-40,Great Pyramid of Giza,Heritage,Layer after layer of stone narrows to a single point with almost perfect accuracy. It is simple geometry built at a huge scale.,no,cards/card40.png
-41,Guggenheim Abu Dhabi,Cultural,"Cones and blocks pile together into a rough, sculptural mass, which echoes the desert and refuses to settle into one neat shape.",no,cards/card41.png
-42,Guggenheim Museum Bilbao,Cultural,"Curved sheets of titanium ripple across the building, which blurs the line between architecture and sculpture.",no,cards/card42.png
-43,Guggenheim Museums,Cultural,"One long spiral ramp turns the museum into a walk, so you go down past the art instead of room to room.",no,cards/card43.png
-44,Gwangan Bridge,Public,"Steel cables stretch across the water in an even rhythm, and the long deck reads as one clean line on the horizon.",yes,cards/card44.png
-45,Hagia Sophia,Heritage,"A massive dome sits over the main hall and looks like it floats. It rests on curved supports, which spread the weight out and keep the inside open and full of light.",yes,cards/card45.png
-46,Heydar Aliyev Center,Cultural,"The walls and floors blend into one smooth curve, so the outside and the inside flow together with no clear line between them.",no,cards/card46.png
-47,Mur Island,Public,"Steel walkways cross over each other to form a small man made island in the river, which becomes a public spot you can reach from several sides.",no,cards/card47.png
-48,Jongmyo Shrine,Heritage,"Long, low rows of plain wooden halls repeat in a steady horizontal beat. That quiet sameness is what gives the shrine its solemn, calm feeling.",yes,cards/card48.png
-49,Gyeongbokgung Palace,Heritage,"Layered roof brackets and wide, curved rooflines stack in careful order, which shows off traditional Korean wood joinery.",yes,cards/card49.png
-50,Li?ge-Guillemins Railway Station,Public,"Thin steel ribs arch up into a wide glass roof, which makes the station feel like it opens straight into the city.",no,cards/card50.png
-51,London Stadium,Stadium,"A light roof rings the field in a clean circle, and cables hold it up so the pitch sits inside a thin, clear frame.",no,cards/card51.png
-52,Sajik Baseball Stadium,Stadium,"Tiered concrete stands curve around the field, which pulls the crowd into one tight, loud bowl.",yes,cards/card52.png
-53,Lotte World Tower,Landmark,"Glass walls get slightly narrower as they rise, which brings the tower to a slim, crystal like point at the top.",yes,cards/card53.png
-54,Lotus Temple,Cultural,"Nine clusters of white concrete petals open like a lotus flower, which gather around one quiet space for prayer.",no,cards/card54.png
-55,Louvre Abu Dhabi,Heritage,"A huge dome full of small holes filters the sunlight into a pattern of dots that moves through the day, which people call a 'rain of light.' It floats over the white galleries below.",no,cards/card55.png
-56,Market Hall,Cultural,"A giant horseshoe arch of apartments curves overhead, and a busy covered market fills the open space underneath.",no,cards/card56.png
-57,Marina Bay Sands,Landmark,"Three towers hold up one long deck across the top, which ties the three legs together into a single line on the skyline.",yes,cards/card57.png
-58,Mercedes-Benz Stadium,Stadium,"The roof opens and closes like a camera shutter. Eight panels slide back, which leaves a round eye open above the field.",no,cards/card58.png
-59,Merdeka 118,Landmark,"Triangular glass facets cover the tower like a cut gem, which climb up to a slim spire that sits off to one side.",yes,cards/card59.png
-60,Metropol Parasol,Public,"A huge wooden lattice spreads out overhead like a group of giant mushrooms, which shades the plaza below.",no,cards/card60.png
-61,Milan Cathedral,Heritage,"A forest of marble spires and flying buttresses points upward, which breaks the heavy stone into a spiky, lacy skyline.",no,cards/card61.png
-62,Milwaukee Art Museum,Cultural,"Two steel wings open and close over the entrance like a bird, which controls how much daylight comes in.",no,cards/card62.png
-63,Morpheus,Landmark,"An outer frame wraps the hotel and leaves big holes right through the middle, which holds the whole building up from the outside.",yes,cards/card63.png
-64,Museum of the Future,Cultural,"A smooth ring shaped building is wrapped in Arabic calligraphy, and the words are cut right through the wall so light comes inside.",yes,cards/card64.png
-65,Namsan Seoul Tower,Landmark,"A thin lattice mast on top of the mountain adds even more height, which lifts the lookout deck high over the whole city.",yes,cards/card65.png
-66,National Centre for the Performing Arts,Cultural,"A smooth titanium and glass dome sits in a pool of water like a half sunk egg, which breaks up the strict grid of the city around it.",no,cards/card66.png
-67,National Palace Museum,Heritage,"Yellow glazed tiles and curved up eaves carry traditional palace style up the hillside in a grand, formal way.",yes,cards/card67.png
-68,National Palace Museum of Pena,Heritage,A jumble of colorful towers in styles that clash crowds the mountaintop. It is fully romantic and mismatched on purpose.,no,cards/card68.png
-69,Neuschwanstein Castle,Heritage,Uneven limestone towers and battlements pile up into a heavily decorated castle that looks like it came from a fairy tale. It sits on a rocky alpine peak.,yes,cards/card69.png
-70,Notre-Dame de Paris,Heritage,"Flying buttresses lean in from the outside to hold up the tall stone walls. They take the sideways push, which lets the nave rise so high.",yes,cards/card70.png
-71,World Trade Center Transportation Hub,Public,"Ribbed white steel spreads out like the wings of a bird, and daylight pours down through the gaps into the transit hall below.",no,cards/card71.png
-72,Old Trafford,Stadium,"Steel roofs reach out over the pitch, which pulls the crowd noise in tight around the field.",no,cards/card72.png
-73,One World Trade Center,Landmark,"Eight slanted triangle faces twist the square base into a tall, crystal like spire, which cuts through the wind as it rises.",yes,cards/card73.png
-74,Oracle Park,Stadium,"Red brick gives the ballpark an old, factory like feel, and the open side frames the bay as part of the view from the seats.",no,cards/card74.png
-75,Orsay Museum,Heritage,"Exposed iron trusses, which are left over from its days as a train station, arch over a long hall full of light.",yes,cards/card75.png
-76,Osaka Castle,Heritage,"Stepped stone walls rise like a fortress, which lifts the gold trimmed keep up above its moat and park.",yes,cards/card76.png
-77,Oscar Niemeyer Museum,Cultural,"A giant concrete eye sits up on a stem above a flat, mirror like base, which makes it look like it floats off the ground.",no,cards/card77.png
-78,Palace of Versailles,Heritage,"Long sight lines and a repeated, even front give the palace its strict symmetry, which carries straight out into the gardens.",no,cards/card78.png
-79,Palais Garnier,Heritage,"Gold trimmed stone and layered marble pile on the Beaux-Arts richness, which steers you toward the grand hall inside.",yes,cards/card79.png
-80,Pantheon,Heritage,A coffered half dome finishes off a perfect round interior. A single round hole at the top lets daylight pour straight down.,yes,cards/card80.png
-81,Park G?ell,Public,"Wavy walls covered in broken tile mosaic snake across the slope, which follow the land so the building and the hill blend together.",yes,cards/card81.png
-82,Petra,Heritage,"Classical fronts are carved straight into the sandstone cliff, which ties the building to the layered rock of the canyon.",no,cards/card82.png
-83,Petronas Twin Tower,Landmark,"Star shaped floor plates, which come from Islamic patterns, stack into twin towers that are joined partway up by a skybridge.",yes,cards/card83.png
-84,Phillips Exeter Academy Library,Public,"Plain brick walls stack into a simple cube. Inside, the rooms are arranged around a tall central hall that is full of light.",no,cards/card84.png
-85,Potala Palace,Heritage,"Stepped stone walls climb the hillside like a fortress, which follow the rough shape of the slope.",no,cards/card85.png
-86,Prague Castle,Heritage,"Centuries of walls, towers, and gothic spires pile into one big hilltop complex, which looms over the city.",yes,cards/card86.png
-87,Royal Palace of Madrid,Heritage,"Plain, massive limestone and granite walls keep things strict and horizontal, which squares the building off around a huge courtyard.",yes,cards/card87.png
-88,Sagrada Fam?lia,Landmark,"Tree like stone columns split apart as they rise, which fills the church like a forest. Tall spires shoot up over the whole thing.",yes,cards/card88.png
-89,Sainte-Chapelle,Heritage,"Walls of stained glass take the place of most of the stone, which turns the chapel into a glass cage full of bright, colored light.",yes,cards/card89.png
-90,Salk Institute for Biological Studies,Cultural,"Bare concrete blocks form two identical wings, which frame an open stone courtyard that looks straight out to the ocean.",yes,cards/card90.png
-91,San Siro Stadium,Stadium,"Spiral concrete ramps wind up the outside of the stadium, which hold up the roof over the steep rows of seats.",no,cards/card91.png
-92,Santa Maria de Montserrat Abbey,Heritage,"Rough stone walls rise to match the jagged cliffs around them, so the monastery looks like it was carved out of the mountain.",yes,cards/card92.png
-93,Sch?nbrunn Palace,Heritage,"An even yellow front stretches out long and low, which links the formal courtyard to the gardens behind it.",no,cards/card93.png
-94,Seokguram Grotto,Heritage,"Granite blocks are fitted together with exact math into a small domed cave, which points the viewer toward the carved Buddha in the center.",yes,cards/card94.png
-95,Seoul Olympic Stadium,Stadium,"Curved concrete tiers flare out in a wide oval, and the shape is based on a traditional Korean pot. The field sits sunk in the middle.",yes,cards/card95.png
-96,Shanghai Tower,Landmark,"A glass skin twists as it climbs, which actually helps the tower shed the wind on the way up.",yes,cards/card96.png
-97,Southern Branch of the National Palace Museum,Heritage,"Curved shapes that overlap each other borrow the feel of ink wash painting, which settles the museum into the lake around it.",yes,cards/card97.png
-98,Sphere,Landmark,"The whole outside is one seamless LED screen wrapped over a perfect sphere, and the inside has projection that wraps all the way around you.",no,cards/card98.png
-99,St. Basil's Cathedral,Heritage,"Brightly colored onion domes cluster together at different heights, which packs the church with dense, playful detail.",no,cards/card99.png
-100,St. Peter's Basilica,Heritage,"Giant Corinthian columns and a huge central dome set the scale, which frames the big square out front.",no,cards/card100.png
-101,Statue of Liberty,Heritage,"A copper skin over an iron frame stands tall and upright, which faces out toward the harbor.",yes,cards/card101.png
-102,Sunrise Kempinski Hotel,Cultural,A round glass front turns the whole hotel into a giant ball that looks like a sun that sits low on the shoreline.,no,cards/card102.png
-103,Sydney Opera House,Landmark,"Locked together concrete shells rise like a group of sails, which lift up sharply off the edge of the harbour.",no,cards/card103.png
-104,Taichung Green Museumbrary,Cultural,"Stacked shapes full of holes and gaps mix the library and the park together, which blurs where the building ends and the green space starts.",no,cards/card104.png
-105,Taipei 101,Landmark,"Stacked sections get a bit narrower as they go up, like a pagoda, and a giant pendulum inside keeps the tower steady in the wind.",yes,cards/card105.png
-106,Taipei Dome,Stadium,One big curved shell holds all the tension of the steel roof in a single smooth shape.,yes,cards/card106.png
-107,Taj Mahal,Heritage,"Perfectly balanced marble faces sit in flawless symmetry, which makes the heavy building look like it floats in its own pool of light.",no,cards/card107.png
-108,TAO ZHU YIN YUAN,Private,"The floors twist as they go up in a double helix, and plants cover the whole thing, which makes the tower look like a green spiral that climbs upward.",yes,cards/card108.png
-109,The Forbidden City,Heritage,"Everything lines up on one strict central axis, walled courtyard after walled courtyard, which lays out the old imperial order in stone and wood.",yes,cards/card109.png
-110,The Louvre Museum,Heritage,Glass pyramid facets sit against the old stone courtyards. The sharp modern shape leads visitors down into the museum below.,yes,cards/card110.png
-111,The Parthenon,Heritage,"Evenly spaced columns set up a steady beat, and tiny built in curves trick your eye, which makes the temple look perfectly straight.",yes,cards/card111.png
-112,The Shard,Landmark,"Faceted glass panels catch and scatter the sky, which makes the tower look like it fades away toward its sharp top.",yes,cards/card112.png
-113,Vessel,Public,"Bronze staircases cross over each other into an open maze of landings, which is built just for walking up and around.",no,cards/card113.png
-114,Tokyo Dome,Stadium,"A tight fabric roof is held up by the air pressure inside, which gives the stadium one big open space with nothing in the way.",no,cards/card114.png
-115,Tokyo Skytree,Landmark,"A lattice tower that gets thinner as it rises borrows from old triangular wood frames, which lets it reach record height and stay steady.",no,cards/card115.png
-116,Topkapi Palace,Heritage,"A chain of walled courtyards, where each one is more private than the last, lays the palace out as a series of gated thresholds.",yes,cards/card116.png
-117,Tottenham Hotspur Stadium,Stadium,"Steep, close stands wrap the pitch in one tight bowl, which traps the crowd noise and aims it at the field.",yes,cards/card117.png
-118,Trocad?ro Square,Public,"A wide open axis lines up the city's sight lines, which frames a grand view straight across to the Eiffel Tower.",yes,cards/card118.png
-119,Wembley Stadium,Stadium,"One huge steel arch carries the weight of the roof in a single span, which anchors the round bowl in the city around it.",no,cards/card119.png
-120,Westminster Abbey,Heritage,"Ribbed stone vaults carry the weight up and overhead, which makes the heavy stone feel light and pulls your eye toward the windows.",yes,cards/card120.png
-121,Yankee Stadium,Stadium,"A formal stone front wraps the ballpark in a solid, classic shell, which tightens the big field into a close, high energy arena.",no,cards/card121.png
-122,Villa Savoye,Heritage,"Features traditional motifs like the Phoenix (Bonghwang) or Dancheong patterns, symbolizing the dignity of the Joseon royal court and cultural heritage.",no,cards/card122.png
-123,Frank Lloyd Wright Home,,,no,cards/card123.png
-124,Casa Mila,,,yes,cards/card124.png
-125,Azadi Tower,,,no,cards/card125.png
-126,Bauhaus,,,no,cards/card126.png
-127,Kowloon Walled City,,,no,cards/card127.png
-128,Great Wall of China,,,yes,cards/card128.png
-129,Torre di Pisa,,,no,cards/card129.png
-130,Church of St. Ignatius of Loyola,,,yes,cards/card130.png
-131,Trevi Fountain,,,yes,cards/card131.png
-132,Piazza Navona,,,yes,cards/card132.png
-133,Castle of the Holy Angel,,,yes,cards/card133.png
-134,St. Paul's Cathedral,,,no,cards/card134.png
-135,Big Ben,,,yes,cards/card135.png
-136,King's Cross Station,,,yes,cards/card136.png
-137,Tower Bridge,,,yes,cards/card137.png
-138,Cube House,,,no,cards/card138.png
-139,Depot Boijmans Van Beuningen,,,no,cards/card139.png
-140,St. Stephen's Cathedral,,,no,cards/card141.png
-141,Hohensalzburg Fortress,,,no,cards/card142.png
-142,Machu Picchu,,,no,cards/card143.png
-143,The Metropolitan Museum of Art,,,no,cards/card144.png
-144,Pyramid of the Moon,,,no,cards/card145.png
-145,Christ the Redeemer,,,no,cards/card146.png
-146,Angkor Wat,,,no,cards/card147.png
-147,The British Museum,,,yes,cards/card148.png
-148,Walt Disney Concert Hall,,,no,cards/card149.png
-149,Willis Tower,,,no,cards/card150.png
-150,Goldengate bridge,,,yes,cards/card151.png
-151,CN Tower,,,yes,cards/card152.png
-152,Palm Jumeirah,,,yes,cards/card153.png
-153,Apple Park,,,no,cards/card154.png
-154,Suzhou Museum of Contemporary Art,,,no,cards/card155.png
-155,Zaishui Art Museum,,,no,cards/card156.png
+1,20 Fenchurch Street,Landmark,"The tower gets wider as it goes up, so it looks top heavy on purpose. At the top there is a huge glass roof that sticks out over the street.",yes,cards/card1.jpg
+2,111 West 57th Street,Cultural,"Thin terracotta piers run straight up the tower, which makes it look even narrower than it already is. It is the slimmest skyscraper in the world, and it sits on a very tight lot.",no,cards/card2.jpg
+3,1000 Trees,Landmark,"The building has rows of concrete columns, and each one holds a real tree on top. The columns step up like a terraced hill that someone dropped into the city.",yes,cards/card3.jpg
+4,Abbey of Mont Saint-Michel,Heritage,"Layers of granite climb the rock in a rough pyramid shape, which makes the abbey look like it grew straight out of the island.",no,cards/card4.jpg
+5,Alhambra Palace,Heritage,"The palace is covered in detailed geometric tiles and has open courtyards, which give it a layered feel where one quiet space leads into the next.",no,cards/card5.jpg
+6,Allianz Arena,Stadium,"Puffy diamond shaped panels cover the whole stadium in a soft skin, which lights up and changes color at night.",yes,cards/card6.jpg
+7,Amba Vilas Palace,Heritage,"Domes and arched walkways stack up in classic Indo-Saracenic style, which builds up toward a tall tower in the center.",no,cards/card7.jpg
+8,Anfield,Stadium,"The stands are steep and lean in close to the pitch, which packs the crowd in tight and makes it loud.",no,cards/card8.jpg
+9,Arch of Triumph,Heritage,Heavy stone piers and a deep carved ceiling give the arch its strict symmetry. It stands right where a dozen big avenues meet.,yes,cards/card9.jpg
+10,ArtScience Museum,Cultural,"Ten petal shaped fingers open out from the base like a lotus flower, which catch rainwater and send it down to a pool in the middle.",yes,cards/card10.jpg
+11,Auditorium of Tenerife,Landmark,"A huge curved concrete roof sweeps up and over the building like a frozen wave, which hangs above the coastline.",no,cards/card11.jpg
+12,Beijing National Stadium,Stadium,"Tangled steel beams wrap around the bowl of seats in a messy lattice, which is exactly why people call it the Bird's Nest.",no,cards/card12.jpg
+13,Berlin Olympic Stadium,Stadium,"Heavy stone columns line up around a stadium that is sunk into the ground, which settles the whole thing low into the land.",no,cards/card13.jpg
+14,Santiago Bernabeu Stadium,Stadium,"A shiny metal skin can open and close around the stands, which pulls a busy city stadium together into one smooth, reflective shape.",yes,cards/card14.jpg
+15,Bibliotheca Alexandrina,Cultural,"A giant tilted disk of granite and glass leans toward the sea. Inside, it drops down into a wide reading room with stepped levels.",no,cards/card15.jpg
+16,The Blue Mosque,Heritage,"Half domes step down from the main dome, and six thin minarets rise around it. They lead into a huge interior that is covered in tiles.",yes,cards/card16.jpg
+17,Buckingham Palace,Heritage,"A long, even classical front with a central entrance wraps around a big closed courtyard, which keeps the whole thing calm and symmetrical.",yes,cards/card17.jpg
+18,Fosun Foundation,Cultural,"Three layers of bronze tubes slowly turn around the building like a stage curtain, which opens and closes the view to the river.",yes,cards/card18.jpg
+19,Bulguksa Temple,Heritage,"Stone platforms and locked wooden brackets stack up in careful order, which lifts the wooden halls above the terraced hillside. It shows off Silla era craft.",yes,cards/card19.jpg
+20,Burj Al Arab,Landmark,A big white sail made of coated fabric rises off its own man made island. Its shape comes from the sail of a traditional boat.,yes,cards/card20.jpg
+21,Burj Khalifa,Landmark,"The floor plan is a Y shape with three arms, which keeps the world's tallest tower stiff as it spirals up and cuts through the wind.",yes,cards/card21.jpg
+22,Camp Nou,Stadium,"Huge tilted concrete tiers stack outward to hold one of the biggest crowds in football, which all face inward toward the field.",yes,cards/card22.jpg
+23,Capital Gate,Landmark,"A diagonal steel frame lets the tower lean a bold 18 degrees to one side and still stay up, which braces it against wind and earthquakes.",no,cards/card23.jpg
+24,Casa Batllo,Private,"Bony, uneven balconies and rippled colored tiles cover the front, which makes the building look almost alive, like it is made of bone and skin.",yes,cards/card24.jpg
+25,Casa Vicens,Private,"Patterned ceramic tiles and colorful brick cover the house in Moorish style decoration. It mixes straight lines with plant like detail, and it is one of Gaudi's earliest works.",yes,cards/card25.jpg
+26,Centre Pompidou,Cultural,"All the pipes, ducts, and structure are pushed to the outside and color coded, which leaves the floors inside wide open and easy to change around.",no,cards/card26.jpg
+27,Chapel on the Water,Heritage,"Two L shaped concrete walls frame the view outside, which sets the plain, quiet chapel right at the edge of a still pond.",no,cards/card27.jpg
+28,Cathedral of Santa Maria del Fiore,Heritage,"A massive double shell brick dome, which was a risky piece of engineering back then, sits above a front that is covered in patterned marble.",yes,cards/card28.jpg
+29,Church of Light,Heritage,"A cross is cut clean through a bare concrete wall, which lets a cross of bright daylight do all the decoration inside.",no,cards/card29.jpg
+30,Coal Drops Yard,Public,"Two old Victorian coal sheds got new curved roofs that reach toward each other, which forms a covered street between the brick buildings.",yes,cards/card30.jpg
+31,Cologne Cathedral,Heritage,"Stone tracery and thin buttresses push straight up in a dense, sharp lattice, which looks like it pierces the sky.",no,cards/card31.jpg
+32,Colosseum,Heritage,"Stacked rows of arches and stepped stone tiers ring the arena, which is built from layer on layer of vaults.",yes,cards/card32.jpg
+33,DDP(Dongdaemun Design Plaza),Landmark,"Smooth aluminum panels and soft curves let the building bend and roll like a landscape, which has no hard edges anywhere.",yes,cards/card33.jpg
+34,Dubai Frame,Landmark,"A giant gold rectangle stands empty in the middle, which frames old Dubai on one side and new Dubai on the other.",yes,cards/card34.jpg
+35,Eiffel Tower,Landmark,Open iron lattice lets you see right through the tower as it gets narrower toward the top. The metal web is built so the wind passes through it.,yes,cards/card35.jpg
+36,Empire State Building,Landmark,"Stepped Art Deco setbacks climb to a sharp vertical peak, which helped define the New York skyline.",yes,cards/card36.jpg
+37,Emporia,Public,"A curved wall of golden glass gives the building a soft, liquid look on the outside, even though it is solid underneath.",no,cards/card37.jpg
+38,Fallingwater,Private,"Concrete decks reach out over a stream, which anchors the house into the rock so it looks like it grew there.",no,cards/card38.jpg
+39,Ferrari World Abu Dhabi,Cultural,"A wide red roof spreads low and flat over the building, and its curves come straight from the body of a sports car.",no,cards/card39.jpg
+40,Great Pyramid of Giza(Pyramid of Khufu),Heritage,Layer after layer of stone narrows to a single point with almost perfect accuracy. It is simple geometry built at a huge scale.,no,cards/card40.jpg
+41,Guggenheim Abu Dhabi,Cultural,"Cones and blocks pile together into a rough, sculptural mass, which echoes the desert and refuses to settle into one neat shape.",no,cards/card41.jpg
+42,Guggenheim Bilbao Museum,Cultural,"Curved sheets of titanium ripple across the building, which blurs the line between architecture and sculpture.",no,cards/card42.jpg
+43,Guggenheim Museums,Cultural,"One long spiral ramp turns the museum into a walk, so you go down past the art instead of room to room.",no,cards/card43.jpg
+44,Gwangan Bridge,Public,"Steel cables stretch across the water in an even rhythm, and the long deck reads as one clean line on the horizon.",yes,cards/card44.jpg
+45,Hagia Sophia,Heritage,"A massive dome sits over the main hall and looks like it floats. It rests on curved supports, which spread the weight out and keep the inside open and full of light.",yes,cards/card45.jpg
+46,Heydar Aliyev Center,Cultural,"The walls and floors blend into one smooth curve, so the outside and the inside flow together with no clear line between them.",no,cards/card46.jpg
+47,Island-bridge Murinzel,Public,"Steel walkways cross over each other to form a small man made island in the river, which becomes a public spot you can reach from several sides.",no,cards/card47.jpg
+48,Jongmyo Shrine,Heritage,"Long, low rows of plain wooden halls repeat in a steady horizontal beat. That quiet sameness is what gives the shrine its solemn, calm feeling.",yes,cards/card48.jpg
+49,Gyeongbokgung Palace,Heritage,"Layered roof brackets and wide, curved rooflines stack in careful order, which shows off traditional Korean wood joinery.",yes,cards/card49.jpg
+50,Liege-Guillemins Railway Station,Public,"Thin steel ribs arch up into a wide glass roof, which makes the station feel like it opens straight into the city.",no,cards/card50.jpg
+51,London Stadium,Stadium,"A light roof rings the field in a clean circle, and cables hold it up so the pitch sits inside a thin, clear frame.",no,cards/card51.jpg
+52,Lotte Giants Sajik Stadium,Stadium,"Tiered concrete stands curve around the field, which pulls the crowd into one tight, loud bowl.",yes,cards/card52.jpg
+53,Lotte World Tower,Landmark,"Glass walls get slightly narrower as they rise, which brings the tower to a slim, crystal like point at the top.",yes,cards/card53.jpg
+54,Lotus Temple,Cultural,"Nine clusters of white concrete petals open like a lotus flower, which gather around one quiet space for prayer.",no,cards/card54.jpg
+55,Louvre Abu Dhabi,Heritage,"A huge dome full of small holes filters the sunlight into a pattern of dots that moves through the day, which people call a 'rain of light.' It floats over the white galleries below.",no,cards/card55.jpg
+56,Market Hall (Rotterdam),Cultural,"A giant horseshoe arch of apartments curves overhead, and a busy covered market fills the open space underneath.",no,cards/card56.jpg
+57,Marina Bay Sands,Landmark,"Three towers hold up one long deck across the top, which ties the three legs together into a single line on the skyline.",yes,cards/card57.jpg
+58,Mercedes-Benz Stadium,Stadium,"The roof opens and closes like a camera shutter. Eight panels slide back, which leaves a round eye open above the field.",no,cards/card58.jpg
+59,Merdeka 118,Landmark,"Triangular glass facets cover the tower like a cut gem, which climb up to a slim spire that sits off to one side.",yes,cards/card59.jpg
+60,Metropol Parasol,Public,"A huge wooden lattice spreads out overhead like a group of giant mushrooms, which shades the plaza below.",no,cards/card60.jpg
+61,Milan Cathedral,Heritage,"A forest of marble spires and flying buttresses points upward, which breaks the heavy stone into a spiky, lacy skyline.",no,cards/card61.jpg
+62,Milwaukee Art Museum,Cultural,"Two steel wings open and close over the entrance like a bird, which controls how much daylight comes in.",no,cards/card62.jpg
+63,Morpheus,Landmark,"An outer frame wraps the hotel and leaves big holes right through the middle, which holds the whole building up from the outside.",yes,cards/card63.jpg
+64,Museum of the Future,Cultural,"A smooth ring shaped building is wrapped in Arabic calligraphy, and the words are cut right through the wall so light comes inside.",yes,cards/card64.jpg
+65,Namsan Seoul Tower,Landmark,"A thin lattice mast on top of the mountain adds even more height, which lifts the lookout deck high over the whole city.",yes,cards/card65.jpg
+66,National Centre for the Performing Arts,Cultural,"A smooth titanium and glass dome sits in a pool of water like a half sunk egg, which breaks up the strict grid of the city around it.",no,cards/card66.jpg
+67,National Palace Museum,Heritage,"Yellow glazed tiles and curved up eaves carry traditional palace style up the hillside in a grand, formal way.",yes,cards/card67.jpg
+68,National Palace of Pena,Heritage,A jumble of colorful towers in styles that clash crowds the mountaintop. It is fully romantic and mismatched on purpose.,no,cards/card68.jpg
+69,Neuschwanstein Castle,Heritage,Uneven limestone towers and battlements pile up into a heavily decorated castle that looks like it came from a fairy tale. It sits on a rocky alpine peak.,yes,cards/card69.jpg
+70,Notre-Dame Cathedral,Heritage,"Flying buttresses lean in from the outside to hold up the tall stone walls. They take the sideways push, which lets the nave rise so high.",yes,cards/card70.jpg
+71,Oculus Transportation Hub World Trade Center,Public,"Ribbed white steel spreads out like the wings of a bird, and daylight pours down through the gaps into the transit hall below.",no,cards/card71.jpg
+72,Old Trafford,Stadium,"Steel roofs reach out over the pitch, which pulls the crowd noise in tight around the field.",no,cards/card72.jpg
+73,"One World Trade Center, 1WTC",Landmark,"Eight slanted triangle faces twist the square base into a tall, crystal like spire, which cuts through the wind as it rises.",yes,cards/card73.jpg
+74,Oracle Park,Stadium,"Red brick gives the ballpark an old, factory like feel, and the open side frames the bay as part of the view from the seats.",no,cards/card74.jpg
+75,Orsay Museum,Heritage,"Exposed iron trusses, which are left over from its days as a train station, arch over a long hall full of light.",yes,cards/card75.jpg
+76,Osaka Castle,Heritage,"Stepped stone walls rise like a fortress, which lifts the gold trimmed keep up above its moat and park.",yes,cards/card76.jpg
+77,Oscar Niemeyer Museum,Cultural,"A giant concrete eye sits up on a stem above a flat, mirror like base, which makes it look like it floats off the ground.",no,cards/card77.jpg
+78,Palace of Versailles,Heritage,"Long sight lines and a repeated, even front give the palace its strict symmetry, which carries straight out into the gardens.",no,cards/card78.jpg
+79,Palais Garnier,Heritage,"Gold trimmed stone and layered marble pile on the Beaux-Arts richness, which steers you toward the grand hall inside.",yes,cards/card79.jpg
+80,Pantheon,Heritage,A coffered half dome finishes off a perfect round interior. A single round hole at the top lets daylight pour straight down.,yes,cards/card80.jpg
+81,Park Guell,Public,"Wavy walls covered in broken tile mosaic snake across the slope, which follow the land so the building and the hill blend together.",yes,cards/card81.jpg
+82,Petra,Heritage,"Classical fronts are carved straight into the sandstone cliff, which ties the building to the layered rock of the canyon.",no,cards/card82.jpg
+83,Petronas Twin Tower,Landmark,"Star shaped floor plates, which come from Islamic patterns, stack into twin towers that are joined partway up by a skybridge.",yes,cards/card83.jpg
+84,Phillips Exeter Academy Library,Public,"Plain brick walls stack into a simple cube. Inside, the rooms are arranged around a tall central hall that is full of light.",no,cards/card84.jpg
+85,Potala Palace,Heritage,"Stepped stone walls climb the hillside like a fortress, which follow the rough shape of the slope.",no,cards/card85.jpg
+86,Prague Castle,Heritage,"Centuries of walls, towers, and gothic spires pile into one big hilltop complex, which looms over the city.",yes,cards/card86.jpg
+87,Royal Palace of Madrid,Heritage,"Plain, massive limestone and granite walls keep things strict and horizontal, which squares the building off around a huge courtyard.",yes,cards/card87.jpg
+88,Sagrada Familia,Landmark,"Tree like stone columns split apart as they rise, which fills the church like a forest. Tall spires shoot up over the whole thing.",yes,cards/card88.jpg
+89,Sainte-Chapelle,Heritage,"Walls of stained glass take the place of most of the stone, which turns the chapel into a glass cage full of bright, colored light.",yes,cards/card89.jpg
+90,Salk Institute for Biological Studies,Cultural,"Bare concrete blocks form two identical wings, which frame an open stone courtyard that looks straight out to the ocean.",yes,cards/card90.jpg
+91,San Siro Stadium,Stadium,"Spiral concrete ramps wind up the outside of the stadium, which hold up the roof over the steep rows of seats.",no,cards/card91.jpg
+92,Santa Maria de Montserrat Abbey,Heritage,"Rough stone walls rise to match the jagged cliffs around them, so the monastery looks like it was carved out of the mountain.",yes,cards/card92.jpg
+93,Schonbrunn Palace,Heritage,"An even yellow front stretches out long and low, which links the formal courtyard to the gardens behind it.",no,cards/card93.jpg
+94,Seokguram Grotto,Heritage,"Granite blocks are fitted together with exact math into a small domed cave, which points the viewer toward the carved Buddha in the center.",yes,cards/card94.jpg
+95,Seoul Olympic Stadium,Stadium,"Curved concrete tiers flare out in a wide oval, and the shape is based on a traditional Korean pot. The field sits sunk in the middle.",yes,cards/card95.jpg
+96,Shanghai Tower,Landmark,"A glass skin twists as it climbs, which actually helps the tower shed the wind on the way up.",yes,cards/card96.jpg
+97,Southern Branch of the National Palace Museum,Heritage,"Curved shapes that overlap each other borrow the feel of ink wash painting, which settles the museum into the lake around it.",yes,cards/card97.jpg
+98,Sphere,Landmark,"The whole outside is one seamless LED screen wrapped over a perfect sphere, and the inside has projection that wraps all the way around you.",no,cards/card98.jpg
+99,St. Basil's Cathedral,Heritage,"Brightly colored onion domes cluster together at different heights, which packs the church with dense, playful detail.",no,cards/card99.jpg
+100,St. Peter's Basilica,Heritage,"Giant Corinthian columns and a huge central dome set the scale, which frames the big square out front.",no,cards/card100.jpg
+101,Statue of Liberty,Heritage,"A copper skin over an iron frame stands tall and upright, which faces out toward the harbor.",yes,cards/card101.jpg
+102,Sunrise Kempinski Hotel,Cultural,A round glass front turns the whole hotel into a giant ball that looks like a sun that sits low on the shoreline.,no,cards/card102.jpg
+103,Sydney Opera House,Landmark,"Locked together concrete shells rise like a group of sails, which lift up sharply off the edge of the harbour.",no,cards/card103.jpg
+104,Taichung Green Museumbrary,Cultural,"Stacked shapes full of holes and gaps mix the library and the park together, which blurs where the building ends and the green space starts.",no,cards/card104.jpg
+105,Taipei 101,Landmark,"Stacked sections get a bit narrower as they go up, like a pagoda, and a giant pendulum inside keeps the tower steady in the wind.",yes,cards/card105.jpg
+106,Taipei Dome,Stadium,One big curved shell holds all the tension of the steel roof in a single smooth shape.,yes,cards/card106.jpg
+107,Taj Mahal,Heritage,"Perfectly balanced marble faces sit in flawless symmetry, which makes the heavy building look like it floats in its own pool of light.",no,cards/card107.jpg
+108,TAO ZHU YIN YUAN,Private,"The floors twist as they go up in a double helix, and plants cover the whole thing, which makes the tower look like a green spiral that climbs upward.",yes,cards/card108.jpg
+109,The Forbidden City,Heritage,"Everything lines up on one strict central axis, walled courtyard after walled courtyard, which lays out the old imperial order in stone and wood.",yes,cards/card109.jpg
+110,The Louvre Museum,Heritage,Glass pyramid facets sit against the old stone courtyards. The sharp modern shape leads visitors down into the museum below.,yes,cards/card110.jpg
+111,The Parthenon,Heritage,"Evenly spaced columns set up a steady beat, and tiny built in curves trick your eye, which makes the temple look perfectly straight.",yes,cards/card111.jpg
+112,The Shard,Landmark,"Faceted glass panels catch and scatter the sky, which makes the tower look like it fades away toward its sharp top.",yes,cards/card112.jpg
+113,The Vessel,Public,"Bronze staircases cross over each other into an open maze of landings, which is built just for walking up and around.",no,cards/card113.jpg
+114,Tokyo Dome,Stadium,"A tight fabric roof is held up by the air pressure inside, which gives the stadium one big open space with nothing in the way.",no,cards/card114.jpg
+115,Tokyo Skytree,Landmark,"A lattice tower that gets thinner as it rises borrows from old triangular wood frames, which lets it reach record height and stay steady.",no,cards/card115.jpg
+116,Topkapi Palace,Heritage,"A chain of walled courtyards, where each one is more private than the last, lays the palace out as a series of gated thresholds.",yes,cards/card116.jpg
+117,Tottenham Hotspur Stadium,Stadium,"Steep, close stands wrap the pitch in one tight bowl, which traps the crowd noise and aims it at the field.",yes,cards/card117.jpg
+118,Trocadero Square,Public,"A wide open axis lines up the city's sight lines, which frames a grand view straight across to the Eiffel Tower.",yes,cards/card118.jpg
+119,Wembley Stadium,Stadium,"One huge steel arch carries the weight of the roof in a single span, which anchors the round bowl in the city around it.",no,cards/card119.jpg
+120,Westminster Abbey,Heritage,"Ribbed stone vaults carry the weight up and overhead, which makes the heavy stone feel light and pulls your eye toward the windows.",yes,cards/card120.jpg
+121,Yankee Stadium,Stadium,"A formal stone front wraps the ballpark in a solid, classic shell, which tightens the big field into a close, high energy arena.",no,cards/card121.jpg
+122,Villa Savoye,Private,"A plain white box that floats on thin columns, which stands for Le Corbusier's idea of a modern 'machine for living.'",no,cards/card122.jpg
+123,Frank Lloyd Wright Home,Private,"The house grew over the years as Wright's own home and workshop, where he tested his ideas.",no,cards/card123.jpg
+124,Casa Mila,Private,"A wavy line that stands for the rippled stone front, which earned the building its nickname 'the quarry.'",yes,cards/card124.jpg
+125,Azadi Tower,Landmark,"White marble covers a tower built as one giant arch. The curve mixes an old Persian arch with a pointed Islamic one, and the legs split apart and meet again at the top.",no,cards/card125.jpg
+126,Bauhaus,Public,"A glass wall wraps the corner of the workshop block, which lets you see the structure right through it. The whole building is plain, white, and boxy, and the famous BAUHAUS sign runs straight down the side.",no,cards/card126.jpg
+127,Kowloon Walled City,Heritage,"A tight, messy block of stacked shapes, which stands for the most crowded place on earth that once stood here.",no,cards/card127.jpg
+128,The Great Wall of China,Heritage,"A wavy line with watchtowers, which stands for the wall as it winds over the mountains.",yes,cards/card128.jpg
+129,Leaning Tower of Pisa,Landmark,"A round tower that tilts to one side, which is the famous lean everyone knows it for.",no,cards/card129.jpg
+130,Church of St. Ignatius of Loyola at Campus Martius,Heritage,"The ceiling looks like it opens into a huge dome, but it is really flat and painted with a trick of perspective.",yes,cards/card130.jpg
+131,Trevi Fountain,Public,"The figure of a sea god in front of arches, which stands for the grand Baroque fountain.",yes,cards/card131.jpg
+132,Piazza Navona,Public,"A long oval with a fountain in the middle, which traces the old Roman racetrack the square was built on.",yes,cards/card132.jpg
+133,Castle of the Holy Angel,Heritage,"An angel on top of a round tower, which is the archangel the castle is named for.",yes,cards/card133.jpg
+134,St. Paul's Cathedral,Heritage,"A round dome with a cross on top, which stands for Christopher Wren's famous cathedral.",no,cards/card134.jpg
+135,Elizabeth Tower,Landmark,"A tall clock tower shape, which everyone knows as the face of London.",yes,cards/card135.jpg
+136,King's Cross Station,Public,"A fan of curved lines that spread out from one point, which copies the station's curved roof.",yes,cards/card136.jpg
+137,Tower Bridge,Public,"Two towers joined by a high walkway over a road that splits open, which is the bridge's famous shape.",yes,cards/card137.jpg
+138,Cube House,Private,"A cube balanced on one corner, which is the odd tilted shape of the houses.",no,cards/card138.jpg
+139,Art Depot Museum Boijmans Van Beuningen,Cultural,"A round mirror bowl that reflects the city, which stands for the first open art storage building in the world.",no,cards/card139.jpg
+140,St. Stephen's Cathedral,Heritage,"A steep roof with a colorful zigzag pattern, which is the tiled roof everyone knows this church by.",no,cards/card140.jpg
+141,Hohensalzburg Fortress,Heritage,"A fortress on a hilltop, which stands for one of the biggest old castles still left in Europe.",no,cards/card141.jpg
+142,Machu Picchu,Heritage,"Stone terraces below a sharp peak, which is the view everyone pictures of the lost Inca city.",no,cards/card142.jpg
+143,The Metropolitan Museum of Art,Cultural,"A letter M drawn from an old Renaissance diagram of circles and lines, which links the museum to classical art.",no,cards/card143.jpg
+144,Pyramid of the Moon,Heritage,"A stepped pyramid shape, which stands for one of the great pyramids of ancient Mexico.",no,cards/card144.jpg
+145,Christ the Redeemer,Landmark,"A figure with arms spread wide, which is the statue that watches over Rio.",no,cards/card145.jpg
+146,Angkor Wat,Heritage,"Five towers shaped like lotus buds, which is the temple outline seen on Cambodia's flag.",no,cards/card146.jpg
+147,The British Museum,Cultural,"A row of Greek columns, which stands for the museum's grand front and its ancient collections.",yes,cards/card147.jpg
+148,Walt Disney Concert Hall,Cultural,"Curved metal sails that seem to move, which stands for the hall's curved steel shape.",no,cards/card148.jpg
+149,Willis Tower,Landmark,"Nine squares bundled together at different heights, which shows how the tower is built.",no,cards/card149.jpg
+150,Goldengate bridge,Landmark,"Two tall towers linked by long curved cables, which is the outline of the famous orange bridge.",yes,cards/card150.jpg
+151,CN Tower,Landmark,"A thin tower with a round pod near the top, which is the shape that marks Toronto's skyline.",yes,cards/card151.jpg
+152,Palm Jumeirah,Landmark,"A palm tree seen from above, which is the shape of the man-made islands.",yes,cards/card152.jpg
+153,Apple Park,Private,"A perfect ring, which stands for the round main building at Apple's headquarters.",no,cards/card153.jpg
+154,Suzhou Museum of Contemporary Art,Cultural,"A ribbon that curves over grouped shapes, which stands for the long roof that ties the pavilions together.",no,cards/card154.jpg
+155,Zaishui Art Museum,Cultural,"A long, thin line low over water, which stands for the museum that sits right on a lake.",no,cards/card155.jpg
+156,Margravial Opera House,Heritage,"A Baroque theater where the whole inside is carved and painted wood, so the plain outside hides a rich, layered hall within.",yes,cards/card156.jpg
+157,National Theatre Munich,Cultural,"A row of tall Greek columns fronts a steep triangular roof, which gives the opera house the look of a classical temple.",no,cards/card157.jpg
+158,Weissenhof Estate,Private,"Plain white boxes with flat roofs and open plans sit together as a test estate, which showed off early modern housing ideas.",no,cards/card158.jpg
+159,National Museum of Korea,Cultural,"A long, low stone building splits into two wings with a wide open gap between them, which frames a view straight through to the mountain behind.",yes,cards/card159.jpg
+160,The Getty Center,Cultural,"Blocks of pale travertine stone step across a hilltop, which spread the museum out into pavilions linked by open courtyards.",yes,cards/card160.jpg
+161,Spaceship Earth,Landmark,"A full geodesic sphere is built from thousands of triangles, which is the only complete sphere of its kind you can walk inside.",no,cards/card161.jpg
+162,Oslo Opera House,Cultural,"A sloped white marble roof runs straight down into the water like a ramp, which invites people to walk right up over the building.",no,cards/card162.jpg
+163,Dubai Opera,Cultural,"The curved glass shape copies a traditional wooden sailing boat, which nods to the region's pearl fishing past.",no,cards/card163.jpg
+164,The Royal Danish Library,Cultural,"A sleek black granite and glass block leans over the water, which earned it the nickname 'the Black Diamond.'",no,cards/card164.jpg
+165,City of Arts and Sciences,Cultural,"White skeleton like shells and long pools spread across the site, which turn the science complex into a set of giant sculptures.",no,cards/card165.jpg
+166,Villa Rotunda,Heritage,"A perfectly symmetrical house with the same temple front on all four sides sits under a central dome, which is a model of Renaissance balance.",no,cards/card166.jpg
+167,Chichu Art Museum,Cultural,"Most of the museum is buried underground, so bare concrete rooms are lit only by daylight that drops in through open cuts above.",no,cards/card167.jpg
+168,"Leeum, Samsung Museum of Art",Cultural,"Three buildings by three different architects sit side by side, which mixes terracotta, black concrete, and glass into one museum.",yes,cards/card168.jpg
+169,Flatiron Building,Landmark,"A wedge shaped tower fills a sharp triangular corner, which squeezes to a narrow point where two avenues cross.",no,cards/card169.jpg
+170,House VI,Private,"Grids, walls, and columns cut through the house in ways that ignore how you actually live, which treats the home as a pure geometric puzzle.",no,cards/card170.jpg
+171,Cusco Cathedral,Heritage,"Heavy Spanish stone walls sit right on top of old Inca foundations, which stacks two very different building traditions in one place.",no,cards/card171.jpg
+172,Couvent de La Tourette,Heritage,"A raw concrete monastery sits up on legs over a slope, which wraps plain monk cells around an inner courtyard.",no,cards/card172.jpg
+173,Philip Johnson Glass House,Private,"The outer walls are all glass, so the house is fully see through and the surrounding landscape becomes the real wall.",no,cards/card173.jpg
+174,Casa da Musica,Cultural,"A faceted white concrete block full of odd angles sits alone on an open plaza, which looks like a rough cut stone dropped in the city.",no,cards/card174.jpg
+175,Spiral Building,Cultural,"A staggered mix of shapes and a spiral ramp stack up the front, which breaks the busy street wall into playful, mismatched pieces.",no,cards/card175.jpg
+176,Vitra Fire Station,Public,"Sharp concrete planes slice and tilt at hard angles, which makes the little fire station look frozen mid movement.",no,cards/card176.jpg
+177,Vitra Design Museum,Cultural,"White curved walls and ramps twist and collide, which turns the small museum into a piece of abstract sculpture.",no,cards/card177.jpg
+178,HSBC Main Building,Landmark,"The structure is hung from big outer masts and braces, which clears the ground floor into an open public space you can walk right under.",yes,cards/card178.jpg
+179,Loyd's Building,Landmark,"Stairs, lifts, and pipes are all pushed to the outside, which leaves the trading floors inside as one big open, flexible space.",no,cards/card179.jpg
+180,425 park avenue,Landmark,"The tower steps back three times as it rises and shows off its bracing at the top, which gives it a clear, structured skyline profile.",no,cards/card180.jpg
+181,The Shed,Cultural,"A giant outer shell on wheels rolls out over an open plaza, which doubles the size of the arts center when it is needed.",,cards/card181.jpg
+182,Couvent Sainte-Marie de La Tourette,Heritage,"A raw concrete monastery perches on thin legs over a slope, which lines up plain monk cells above a shared courtyard.",,cards/card182.jpg
+183,Villa d'Este,Heritage,"Terraced gardens step down the hillside past hundreds of fountains, which turn moving water into the main show of the villa.",,cards/card183.jpg
+184,Museum SAN,Cultural,"Stone, water, and paper themed courtyards line up in a row, which lead visitors slowly through calm space before reaching the art.",,cards/card184.jpg
+185,Le Corbusier's Cabanon,Private,"A tiny plain wood cabin holds everything needed to live in one small room, which was Le Corbusier's test of the smallest good home.",,cards/card185.jpg
+186,Hemeroscopium House,Private,"Heavy concrete and steel beams balance on top of each other like a stack of giant blocks, which lock together with a pool as the counterweight.",,cards/card186.jpg
+187,The Factory,Cultural,"Old brick industrial buildings are joined by new additions, which keep the raw factory feel while turning it into an arts space.",,cards/card187.jpg
+188,The Aalto House,Private,"Brick, wood, and white render mix softly across a home and studio, which blends work and living into one warm, natural whole.",,cards/card188.jpg
+189,Ronchamp Chapel,Heritage,"Thick curved white walls and a heavy sweeping roof bend in odd directions, which scatter small colored windows through the dim chapel.",,cards/card189.jpg
+190,Brother Klaus Field Chapel,Heritage,"A rough concrete tower was cast around a stack of logs that was then burned away, which leaves a charred, cave like room open to the sky.",,cards/card190.jpg
+191,7132 Therme,Public,"Stacked local quarry stone forms the bath house, which channels visitors through narrow stone passages into pools of different temperatures.",,cards/card191.jpg
+192,Reichstag Building,Heritage,"A new glass dome sits on top of the old stone parliament, which lets people walk up a spiral ramp right above the debating chamber.",,cards/card192.jpg
+193,Kimbell Art Museum,Cultural,"A row of long concrete vaults runs side by side, and a thin slit at the top of each one washes soft daylight across the galleries.",,cards/card193.jpg
+194,Beinecke Rare Book and Manuscript Library,Cultural,"The walls are thin panels of marble that glow when the sun shines through, which protects the rare books from harsh light.",,cards/card194.jpg
+195,Citigroup Center,Landmark,"The tower stands on four huge columns set at the middle of each side, which lifts the whole building up and leaves the corners open.",,cards/card195.jpg
+196,CCTV Headquarters,Landmark,"Two leaning towers bend and join at the top and bottom into a giant loop, which forms a bold, twisted ring in the sky.",,cards/card196.jpg
+197,Modern Art Museum of Fort Worth,Cultural,"Glass pavilions sit in a reflecting pool with concrete roofs on Y shaped columns, which makes the building seem to float on water.",,cards/card197.jpg
+198,Renzo Pavilion,Cultural,"A light steel and glass roof floats above the galleries, which filters daylight down evenly so the art below is softly lit.",,cards/card198.jpg
+199,Amon Carter Museum of American Art,Cultural,"A calm portico of pale stone arches faces the city, which sets a quiet, classical front for the art inside.",,cards/card199.jpg
+200,30 St Mary Axe,Landmark,"A rounded glass tower narrows at both ends and spirals with dark bands, which earned it the nickname 'the Gherkin.'",,cards/card200.jpg
+201,National Museum of Qatar,Cultural,"Hundreds of flat sand colored disks interlock in every direction, which copy the crystals of a desert rose stone.",,cards/card201.jpg
+202,Farnsworth House,Private,"A single glass room floats on white steel columns above a flood plain, which strips the house down to a clear, open box.",,cards/card202.jpg
+203,Barcelona Pavilion,Cultural,"Thin marble walls and a flat roof float over open space, which lets rooms flow into each other with almost no doors.",,cards/card203.jpg
+204,Tour Triangle,Landmark,"A flat triangular slab is wide at the base and thin at the top, which looks solid from the front and razor thin from the side.",,cards/card204.jpg
+205,National Parliament House,Public,"Bare concrete blocks with huge geometric cut outs ring a central chamber, which brings daylight deep into the assembly.",,cards/card205.jpg
+206,Santa Justa Lift,Landmark,"A tall iron tower with an open lattice frame lifts people between two street levels, which looks like a piece of the Eiffel Tower in the city.",,cards/card206.jpg
+207,Luis Barragan House and Studio,Private,"Plain walls painted in bold colors frame quiet rooms and small courtyards, which use light and color instead of decoration.",,cards/card207.jpg
+208,Al Bahar Towers,Landmark,"A shading skin of folding umbrella like panels wraps the twin towers, which open and close with the sun to cut the desert heat.",,cards/card208.jpg
+209,Ali Qapu Palace,Heritage,"A tall gate palace has a high covered balcony held up by slim wooden columns, which looks out over the grand royal square.",,cards/card209.jpg
+210,Bahrain World Trade Center,Landmark,"Two sail shaped towers hold three wind turbines on bridges between them, which turn the gap between the towers into a power source.",,cards/card210.jpg
+211,Bosco Verticale,Private,"Two apartment towers are covered in hundreds of real trees and shrubs on every balcony, which makes a vertical forest in the city.",,cards/card211.jpg
+212,Bullitt Center,Public,"A big solar roof overhangs the whole building, which lets the office make all its own power and water to run fully green.",,cards/card212.jpg
+213,Church of Saint-Maclou,Heritage,"A lacy, heavily carved stone front bristles with sharp Gothic detail, which packs delicate tracery across the whole facade.",,cards/card213.jpg
+214,DFAB House (NEST),Private,"Parts of the house were built by robots and 3D printers, which shows off odd curved shapes normal building could not make.",,cards/card214.jpg
+215,Elbphilharmonie Hamburg,Cultural,"A wavy glass concert hall sits on top of an old brick warehouse, which stacks a modern crown on a heavy industrial base.",,cards/card215.jpg
+216,Finlandia Hall,Cultural,"A white marble concert hall with a slanted tower keeps clean, calm lines, which reflects Alvar Aalto's soft modern style.",,cards/card216.jpg
+217,Harpa Concert Hall and Conference Centre,Cultural,"A glass skin made of colored honeycomb cells covers the hall, which catches the northern light like fish scales.",,cards/card217.jpg
+218,Maison de Verre (House of Glass),Private,"The front wall is built from glass blocks that glow with light, which fills the home with soft daylight while keeping it private.",,cards/card218.jpg
+219,Paimio Sanatorium,Public,"Long, thin wings with wide balconies face the sun, which was designed down to the furniture to help patients heal.",,cards/card219.jpg
+220,Rolex Learning Center (EPFL),Cultural,"One flowing concrete floor gently rolls up and down with holes cut through it, which turns the whole building into a single open landscape.",,cards/card220.jpg
+221,Seagram Building,Landmark,"A clean bronze and glass tower is set back behind an open plaza, which became the model for the modern glass office block.",,cards/card221.jpg
+222,Sendai Mediatheque,Cultural,"See through floors are held up by hollow tube like columns, which lets you look straight through the glass building from outside.",,cards/card222.jpg
+223,National Theatre of Costa Rica,Heritage,"A grand stone front with columns and statues copies European opera houses, which brought old world splendor to Central America.",,cards/card223.jpg
+224,Tehran Museum of Contemporary Art,Cultural,"Curved concrete scoops on the roof catch daylight like wind towers, which mix modern shapes with old Persian building tricks.",,cards/card224.jpg
+225,"21st Century Museum of Contemporary Art, Kanazawa",Cultural,"A low round glass building has no clear front or back, which lets visitors enter and wander from any side.",,cards/card225.jpg
+226,Vasconcelos Library,Cultural,"Glass and steel book stacks seem to float in a tall open hall, which turns the whole library into one big transparent volume.",,cards/card226.jpg
+227,Boston City Hall,Public,"Heavy concrete blocks jut out over a brick plaza in bold Brutalist style, which puts the building's structure right on show.",,cards/card227.jpg
+228,Botin Art Centre,Cultural,"Two rounded pods clad in shiny tiles float on slim columns over the waterfront, which lift the galleries up to open the ground below.",,cards/card228.jpg
+229,Gardens by the Bay,Public,"Giant tree shaped steel towers hold real plants and gather solar power, which mixes a garden and a machine into one skyline.",,cards/card229.jpg
+230,High Line,Public,"An old raised train line was turned into a long thin park, which threads a green walkway right through the city buildings.",,cards/card230.jpg
+231,Seattle Central Library,Cultural,"A faceted glass and steel skin folds around stacked, shifted boxes, which spirals the book collection up through the building.",,cards/card231.jpg
+232,Tate Modern,Cultural,"A huge old power station was reused as an art museum, which kept the giant turbine hall as one vast open gallery.",,cards/card232.jpg
+233,The Holy Redeemer Church and Community Centre of Las Chumberas,Heritage,"Plain white concrete blocks shift and split apart, which let thin lines of daylight slip into the simple worship space.",,cards/card233.jpg
+234,41 Cooper Square,Cultural,"A perforated metal skin peels open at the entrance and a twisting stair runs up the middle, which links all the floors through one dramatic core.",,cards/card234.jpg
+235,Gando Primary School,Public,"A raised tin roof floats above the classrooms to pull hot air out, which keeps the local clay walls cool without any power.",,cards/card235.jpg
+236,Healing Stay KOSMOS (Kosmos Ulleungdo),Private,"Curved white concrete walls wrap around an open courtyard on a remote island, which frames the sea and sky as part of the retreat.",,cards/card236.jpg
+237,Neue Staatsgalerie Stuttgart,Cultural,"Stone walls, bright color accents, and a round open courtyard mix old and new, which lets a public path wind right through the museum.",,cards/card237.jpg
+238,Ningbo History Museum,Cultural,"The walls are built from broken tiles and bricks salvaged from torn down villages, which packs local history right into the building's skin.",,cards/card238.jpg
+239,Municipal Stadium of Braga,Stadium,"The stadium is cut into a rock quarry with stands on only two sides, which are linked across the top by steel cables like a bridge.",,cards/card239.jpg
+240,Ibere Camargo Foundation,Cultural,"A white concrete block sprouts curving outer ramps that snake down its face, which carry visitors between the stacked galleries.",,cards/card240.jpg
+241,MAXXI - National Museum of 21st Century Arts,Cultural,"Long curved concrete tubes bend and overlap through the building, which pull visitors along flowing paths instead of square rooms.",,cards/card241.jpg
+242,The Menil Collection Museum,Cultural,"A long, low building uses curved white 'leaves' in the roof to bounce soft daylight into the galleries, which lights the art without harsh sun.",,cards/card242.jpg

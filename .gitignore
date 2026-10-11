@@ -1,2 +1,12 @@
+# backups / local only
+Original/
+temp/
+*.zip
+cards.xlsx
+# OS junk
+.DS_Store
+Thumbs.db
+# node (not used anymore)
 node_modules/
 .env
+.env.example
