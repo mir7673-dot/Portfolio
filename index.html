@@ -53,6 +53,7 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 .blk-cap .ct{color:var(--text)}
 .blk-cap .cs{color:var(--subtle);margin:0 0.35rem}
 .blk-cap .cn{color:var(--subtle);margin-left:0.45rem}
+.blk-cap .aw{color:#9c3b2e;margin-left:0.3rem;cursor:help}
 
 .resize-h{display:none;position:absolute;bottom:24px;right:0;width:16px;height:16px;cursor:se-resize;z-index:20}
 .resize-h::after{content:'';position:absolute;bottom:2px;right:2px;width:9px;height:9px;border-right:1.5px solid #3b82f6;border-bottom:1.5px solid #3b82f6}
@@ -416,6 +417,7 @@ async function loadWorks(){
         short:(r[gi('short')]||'').trim(),desc:(r[gi('desc')]||'').trim(),
         img:img,gallery:g.length?g:(img?[img]:[]),color:(r[gi('color')]||'#f3f3f1').trim()||'#f3f3f1',
         size:((gi('size')>=0?r[gi('size')]:'')||'').trim().toLowerCase(),
+        award:((gi('award')>=0?r[gi('award')]:'')||'').trim(),
         ratio:0.75,x:0,y:0,w:100,h:300};
     });
   }catch(e){blocks=[];console.error('works.csv load failed',e);}
@@ -456,7 +458,7 @@ function blockHTML(b,mobile){
     '<div class="blk-tb"><span style="color:#777;font-size:0.54rem;padding:0 4px">'+esc(b.title.slice(0,16))+'</span></div>'+
     '<div class="blk-img" style="background:'+b.color+';'+(mobile?'':'height:'+b.h+'px')+'">'+
       (b.img?'<img src="'+encodeURI(b.img)+'" alt="'+esc(b.title)+'">':ph(b.color))+'</div>'+
-    '<div class="blk-cap">'+esc(b.type||'')+'<span class="cs">/</span><span class="ct">'+esc(b.title)+'</span><span class="cs">/</span>'+esc(b.year)+
+    '<div class="blk-cap">'+esc(b.type||'')+'<span class="cs">/</span><span class="ct">'+esc(b.title)+'</span>'+(b.award?'<span class="aw" title="'+esc(b.award)+'">★</span>':'')+'<span class="cs">/</span>'+esc(b.year)+
       (b.gallery.length>1?'<span class="cn">('+b.gallery.length+')</span>':'')+'</div>'+
     '<div class="resize-h"></div></div>';
 }
