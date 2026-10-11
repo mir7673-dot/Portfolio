@@ -40,7 +40,7 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 #page-archive{position:relative}
 .archive-intro{padding:4.5rem 1.5rem 3.5rem;max-width:520px}
 .archive-intro p{font-size:0.82rem;line-height:1.7;text-transform:uppercase;letter-spacing:0.03em;color:var(--text)}
-#archiveCanvas{position:relative;width:100%;padding:0 1.5rem 4rem}
+#archiveCanvas{position:relative;margin:0 1.5rem;padding:0 0 4rem}
 
 .img-block{position:absolute;cursor:pointer;user-select:none}
 .img-block.edit-mode{cursor:grab;outline:1.5px solid #3b82f6;outline-offset:1px}
@@ -49,7 +49,7 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
 .blk-img img{width:100%;height:100%;object-fit:contain;display:block;pointer-events:none;transition:transform 0.5s ease}
 .blk-img .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
 .img-block:not(.edit-mode):hover .blk-img img,.img-block:not(.edit-mode):hover .blk-img .ph{transform:scale(1.012)}
-.blk-cap{padding-top:0.5rem;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.03em;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.blk-cap{padding-top:0.5rem;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.03em;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .blk-cap .ct{color:var(--text)}
 .blk-cap .cs{color:var(--subtle);margin:0 0.35rem}
 .blk-cap .cn{color:var(--subtle);margin-left:0.45rem}
@@ -293,11 +293,9 @@ html,body{height:100%;font-family:var(--mono);font-size:15px;background:var(--bg
         <button class="btn-o" onclick="doLogout()">Sign out</button>
       </div>
       <p class="adm-note">
-        Archive layout is loaded from <code>works.csv</code>. To rearrange: click <b>Edit layout</b>, drag images / drag the corner to resize, then <b>Export works.csv</b> and replace the file in your project folder. Re-deploy to publish.<br>
+        Archive layout is automatic — images flow into a staggered grid in the order they appear in <code>works.csv</code>. To feature a work larger (2-column width), set its <code>size</code> column to <code>big</code>; to reorder, move the rows. Just edit <code>works.csv</code> and re-deploy — no dragging needed.<br>
         Archibook cards come from <code>cards.csv</code>, and Info text is in <code>index.html</code>.
       </p>
-      <button class="edit-btn" onclick="enterEdit()">✦ Edit layout</button>
-      <button class="edit-btn" style="background:var(--text)" onclick="openExport()">⤓ Export works.csv</button>
     </div>
   </div>
 
@@ -391,14 +389,16 @@ function parseCSV(text){
 const phSVG='<svg width="46" height="46" viewBox="0 0 60 60" fill="none" opacity="0.12"><rect x="8" y="8" width="44" height="44" stroke="#555" stroke-width="1.5"/><line x1="8" y1="30" x2="52" y2="30" stroke="#555" stroke-width=".75"/><line x1="30" y1="8" x2="30" y2="52" stroke="#555" stroke-width=".75"/></svg>';
 function ph(c){return '<div class="ph" style="background:'+c+'">'+phSVG+'</div>';}
 
-/* ══ WORKS ══ */
-function autoLayout(items){
-  const colW=46,gap=4,xs=[1,51];let colH=[0,0];
-  return items.map((it,i)=>{
-    const col=colH[0]<=colH[1]?0:1;
-    const h=it.h||(300+(i%3)*70);
-    const y=colH[col];colH[col]+=h+34+gap*6;
-    return {...it,x:(it.x!=null?it.x:xs[col]),y:(it.y!=null?it.y:y),w:(it.w||colW),h};
+/* ══ WORKS (auto staggered masonry) ══ */
+const FEAT_GAP=28, CAP_H=30;
+function measureRatios(cb){
+  let pending=blocks.length; if(!pending){cb();return;}
+  blocks.forEach(b=>{
+    if(!b.img){b.ratio=0.75;if(--pending===0)cb();return;}
+    const im=new Image();
+    im.onload=()=>{b.ratio=im.naturalWidth?im.naturalHeight/im.naturalWidth:0.75;if(--pending===0)cb();};
+    im.onerror=()=>{b.ratio=0.75;if(--pending===0)cb();};
+    im.src=encodeURI(b.img);
   });
 }
 async function loadWorks(){
@@ -408,28 +408,44 @@ async function loadWorks(){
     const rows=parseCSV(await r.text());
     const h=rows[0].map(x=>x.trim().toLowerCase());
     const gi=n=>h.indexOf(n);
-    let items=rows.slice(1).map((r,i)=>{
+    blocks=rows.slice(1).map((r,i)=>{
       const g=(r[gi('gallery')]||'').split(';').map(s=>s.trim()).filter(Boolean);
       const img=(r[gi('img')]||'').trim();
       return {id:i+1,title:(r[gi('title')]||'Untitled').trim(),type:(r[gi('type')]||'').trim(),
         year:(r[gi('year')]||'').trim(),medium:(r[gi('medium')]||'').trim(),status:(r[gi('status')]||'').trim(),
         short:(r[gi('short')]||'').trim(),desc:(r[gi('desc')]||'').trim(),
         img:img,gallery:g.length?g:(img?[img]:[]),color:(r[gi('color')]||'#f3f3f1').trim()||'#f3f3f1',
-        x:r[gi('x')]!==undefined&&r[gi('x')]!==''?parseFloat(r[gi('x')]):null,
-        y:r[gi('y')]!==undefined&&r[gi('y')]!==''?parseFloat(r[gi('y')]):null,
-        w:r[gi('w')]!==undefined&&r[gi('w')]!==''?parseFloat(r[gi('w')]):null,
-        h:r[gi('h')]!==undefined&&r[gi('h')]!==''?parseFloat(r[gi('h')]):null};
+        size:((gi('size')>=0?r[gi('size')]:'')||'').trim().toLowerCase(),
+        ratio:0.75,x:0,y:0,w:100,h:300};
     });
-    blocks=autoLayout(items);
   }catch(e){blocks=[];console.error('works.csv load failed',e);}
-  renderCanvas();
+  measureRatios(renderCanvas);
+}
+function layoutMasonry(W){
+  let cols=W>=1000?3:(W>=620?2:1);
+  const unit=(W-FEAT_GAP*(cols-1))/cols;
+  const capH=Math.min(600,(window.innerHeight||800)*0.72);
+  let colH=new Array(cols).fill(0),i;
+  blocks.forEach(b=>{
+    let span=(cols>=2&&b.size==='big')?2:1; if(span>cols)span=cols;
+    const slotW=unit*span+FEAT_GAP*(span-1);
+    let itemW=slotW, imgH=slotW*(b.ratio||0.75);
+    if(imgH>capH){imgH=capH;itemW=capH/(b.ratio||0.75);}
+    let start=0,best=Infinity;
+    if(span===1){for(i=0;i<cols;i++)if(colH[i]<best-0.5){best=colH[i];start=i;}}
+    else{for(i=0;i+span<=cols;i++){const m=Math.max(colH[i],colH[i+1]);if(m<best-0.5){best=m;start=i;}}}
+    const xpx=start*(unit+FEAT_GAP)+(slotW-itemW)/2;
+    b.x=xpx/W*100; b.w=itemW/W*100; b.y=best; b.h=imgH;
+    for(i=start;i<start+span;i++)colH[i]=best+imgH+CAP_H+FEAT_GAP;
+  });
 }
 function cvH(){return blocks.length?Math.max(...blocks.map(b=>b.y+b.h+34))+40:600;}
 function renderCanvas(){
   const cv=document.getElementById('archiveCanvas');
   const mobile=window.innerWidth<=760;
-  if(mobile){cv.style.cssText='position:relative;width:100%;height:auto';cv.innerHTML=blocks.map(b=>blockHTML(b,true)).join('');return;}
-  cv.style.cssText='position:relative;width:100%;height:'+cvH()+'px';
+  if(mobile){cv.style.cssText='position:relative;height:auto';cv.innerHTML=blocks.map(b=>blockHTML(b,true)).join('');return;}
+  layoutMasonry(cv.clientWidth||960);
+  cv.style.cssText='position:relative;height:'+cvH()+'px';
   cv.innerHTML=blocks.map(b=>blockHTML(b,false)).join('');
   if(editMode)attachDR();
 }
